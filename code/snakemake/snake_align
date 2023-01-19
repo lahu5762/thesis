@@ -1,0 +1,55 @@
+rule bwa_index_reference:
+    input:
+########"/data/raw_data/fasta/ICSASG_v2.fa"
+    output:
+        "/data/fasta/ICSASG_v2.fa"
+    log:
+        "bwa_index_reference.log"
+    shell:
+        "bwa index {input} &> {log}"
+rule bwa_map:
+    input:
+########reference = "/data/fasta/ICSASG_v2.fa",
+        forward = "data/samples/{sample}_1.fastq",
+        reverse = "data/samples/{sample}_2.fastq"
+    output:
+        "mapped_reads/{sample}.bam"
+    params:
+        rg="@RG\\tID:{sample}\\tSM:{sample}\\tLB:lib1"
+    log:
+        "bwa_{sample}.log"
+    threads:
+        16
+    shell:
+        "(bwa mem -R '{params.rg}' -t {threads} {input.reference} {input.forward} {input.reverse} | "
+        "samtools view -Sb - "
+        "> {output}) "
+        "2> {log}"
+rule samtools_sort:
+    input:
+        "mapped_reads/{sample}.bam"
+    output:
+        "sorted_reads/{sample}.bam"
+    log:
+        "sort_{sample}.log"
+    shell:
+        "samtools sort -T sorted_reads/{wildcards.sample} "
+        "-O bam {input} > {output} "
+        "2> {log} "
+rule samtools_index:
+    input:
+        "sorted_reads/{sample}.bam"
+    output:
+        "sorted_reads/{sample}.bam.bai"
+    shell:
+        "samtools index {input}"
+rule goleft_indexcov:
+    input:
+        bam=expand("sorted_reads/{sample}.bam", sample=SAMPLES),
+        bai=expand("sorted_reads/{sample}.bam.bai", sample=SAMPLES)
+    output:
+        "indexcov/index.html"
+    log:
+        "indexcov.log"
+    shell:
+        "goleft indexcov -d indexcov/ {input.bam} 2> {log}"

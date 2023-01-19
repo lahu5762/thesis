@@ -1,0 +1,57 @@
+REF = "data/raw_data/reference/Canis_familiaris.CanFam3.1.dna.toplevel.fa",
+EXCLUDE = "Canis_familiaris.Ngaps.bed",
+GFF = "data/raw_data/reference/GCF_000002285.3_CanFam3.1_genomic.gff"
+
+rule call:
+    input:
+        #bam="sorted_reads/{sample}.bam"
+        cram="data/raw_data/cram/{sample}.merged.md.real.fm.recal.cram"
+    output:
+        "smoove/results/{sample}-smoove.genotyped.vcf.gz"
+    conda:
+        "snakemake/smoove_conda_env.yaml"
+    shell:
+        #"smoove call --outdir smoove/results/ --exclude {EXCLUDE} –name {wildcards.sample} --fasta {REF} -p 1 --genotype {input.bam}"
+        "smoove call --outdir smoove/results/ --exclude {EXCLUDE} –name {wildcards.sample} --fasta {REF} -p 1 --genotype {input.cram}"
+rule merge:
+    input:
+        vcf=expand("smoove/results/{sample}-smoove.genotyped.vcf.gz",
+        sample=SAMPLES)
+    output:
+        "smoove/results/merged.sites.vcf.gz"
+    conda:
+        "snakemake/smoove_conda_env.yaml"
+    shell:
+        "smoove merge --name merged -f {REF} --outdir ./smoove/results/ {input.vcf}"
+rule genotype:
+    input:
+        merge="smoove/results/merged.sites.vcf.gz",
+        #bam="sorted_reads/{sample}.bam"
+        cram="data/raw_data/cram/{sample}.cram"
+    output:
+        "smoove/results/genotyped/{sample}-joint-smoove.genotyped.vcf.gz"
+    conda:
+        "snakemake/smoove_conda_env.yaml"
+    shell:
+        #"smoove genotype -d -x -p 1 --name {wildcards.sample}-joint –outdir smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.bam}"
+        "smoove genotype -d -x -p 1 --name {wildcards.sample}-joint –outdir smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.cram}"
+rule paste:
+    input:
+        vcf=expand("smoove/results/genotyped/{sample}-jointsmoove.genotyped.vcf.gz", 
+        sample=SAMPLES)
+    output:
+        "smoove/results/genotyped/paste/cohort.vcf.gz"
+    conda:
+        "snakemake/smoove_conda_env.yaml"
+    shell:
+        "smoove paste --name cohort {input.vcf}"
+
+rule annotate:
+    input:
+        "smoove/results/genotyped/paste/cohort.vcf.gz"
+    output:
+        "smoove/results/genotyped/paste/cohort.smoove.square.anno.vcf.gz"
+    conda:
+        "snakemake/smoove_conda_env.yaml"
+    shell:
+        "smoove annotate --gff {GFF} {input} | bgzip -c > {output}"
