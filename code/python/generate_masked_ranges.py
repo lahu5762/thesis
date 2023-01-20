@@ -14,7 +14,7 @@ if len(sys.argv) > 1:
     if sys.argv[1].endswith(".fa.gz"):
         input_fasta = io.TextIOWrapper(io.BufferedReader(gzip.open(sys.argv[1])))
     elif sys.argv[1].endswith(".fa") or sys.argv[1].endswith(".txt"):
-        input_fasta = file(sys.argv[1],'r')
+        input_fasta = open(sys.argv[1],'r')
     else:
         raise Exception("Unsupported File Type")
 else:
