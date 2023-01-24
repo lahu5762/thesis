@@ -1,0 +1,4 @@
+SyntaxError:
+Not all output, log and benchmark files of rule merge contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
+  File "/crex/proj/sllstore2017034/nobackup/work/lars/thesis/code/snakemake/Snakefile", line 3, in <module>
+  File "/crex/proj/sllstore2017034/nobackup/work/lars/thesis/code/snakemake/snake_smoove", line 29, in <module>

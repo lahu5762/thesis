@@ -7,42 +7,48 @@ rule call:
         #bam="sorted_reads/{sample}.bam"
         cram="data/raw_data/cram/{sample}.merged.md.real.fm.recal.cram"
     output:
-        "smoove/results/{sample}-smoove.genotyped.vcf.gz"
+        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/{sample}-smoove.genotyped.vcf.gz"
     log:
-        "logs/call/{sample}.log"
+        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/call/{sample}.log"
     conda:
         "smoove_conda_env.yaml"
     shell:
         #"smoove call --outdir smoove/results/ --exclude {EXCLUDE} –name {wildcards.sample} --fasta {REF} -p 1 --genotype {input.bam}"
-        "smoove call --outdir smoove/results/ --exclude {EXCLUDE} –name {wildcards.sample} --fasta {REF} -p 1 --genotype {input.cram}"
+        "smoove call --outdir /proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/ --exclude {EXCLUDE} –name {wildcards.sample} --fasta {REF} -p 1 --genotype {input.cram}"
 rule merge:
     input:
-        vcf=expand("smoove/results/{sample}-smoove.genotyped.vcf.gz",
+        vcf=expand("/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/{sample}-smoove.genotyped.vcf.gz",
         sample=SAMPLES)
     output:
-        "smoove/results/merged.sites.vcf.gz"
+        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/merged.sites.vcf.gz"
+    log:
+        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/merge/merged.sites.log"
     conda:
         "smoove_conda_env.yaml"
     shell:
-        "smoove merge --name merged -f {REF} --outdir ./smoove/results/ {input.vcf}"
+        "smoove merge --name merged -f {REF} --outdir /proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/ {input.vcf}"
 rule genotype:
     input:
-        merge="smoove/results/merged.sites.vcf.gz",
+        merge="/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/merged.sites.vcf.gz",
         #bam="sorted_reads/{sample}.bam"
         cram="data/raw_data/cram/{sample}.merged.md.real.fm.recal.cram"
     output:
-        "smoove/results/genotyped/{sample}-joint-smoove.genotyped.vcf.gz"
+        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/{sample}-joint-smoove.genotyped.vcf.gz"
+    log:
+        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/genotype/{sample}.log"
     conda:
         "smoove_conda_env.yaml"
     shell:
         #"smoove genotype -d -x -p 1 --name {wildcards.sample}-joint –outdir smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.bam}"
-        "smoove genotype -d -x -p 1 --name {wildcards.sample}-joint –outdir smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.cram}"
+        "smoove genotype -d -x -p 1 --name {wildcards.sample}-joint –outdir /proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.cram}"
 rule paste:
     input:
-        vcf=expand("smoove/results/genotyped/{sample}-joint-smoove.genotyped.vcf.gz", 
+        vcf=expand("/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/{sample}-joint-smoove.genotyped.vcf.gz", 
         sample=SAMPLES)
     output:
-        "smoove/results/genotyped/paste/cohort.vcf.gz"
+        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/paste/cohort.vcf.gz"
+    log:
+        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/paste/cohort.log"
     conda:
         "smoove_conda_env.yaml"
     shell:
@@ -50,9 +56,11 @@ rule paste:
 
 rule annotate:
     input:
-        "smoove/results/genotyped/paste/cohort.vcf.gz"
+        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/paste/cohort.vcf.gz"
     output:
-        "smoove/results/genotyped/paste/cohort.smoove.square.anno.vcf.gz"
+        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/paste/cohort.smoove.square.anno.vcf.gz"
+    log:
+        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/annotate/cohort.smoove.anno.log"
     conda:
         "smoove_conda_env.yaml"
     shell:
