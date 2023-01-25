@@ -1,4 +1,0 @@
-Building DAG of jobs...
-WildcardError in line 7 of /crex/proj/sllstore2017034/nobackup/work/lars/thesis/snaketest:
-Wildcards in input files cannot be determined from output files:
-'file_ext'
