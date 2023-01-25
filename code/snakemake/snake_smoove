@@ -4,64 +4,64 @@ GFF = "data/raw_data/reference/GCF_000002285.3_CanFam3.1_genomic.gff"
 
 rule call:
     input:
-        #bam="sorted_reads/{sample}.bam"
-        cram="data/raw_data/cram/{sample}.merged.md.real.fm.recal.cram"
+        #bam="sorted_reads/{wolf}.bam"
+        cram="data/raw_data/kardos2018/{wolf}.merged.md.real.fm.recal.cram"
     output:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/{sample}-smoove.genotyped.vcf.gz"
+        "out/smoove/results/{wolf}.smoove.genotyped.vcf.gz"
     log:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/call/{sample}.log"
-    conda:
-        "smoove_conda_env.yaml"
+        "logs/call/{wolf}.log"
+    singularity:
+        "smoove_latest.sif"
     shell:
-        #"smoove call --outdir smoove/results/ --exclude {EXCLUDE} –name {wildcards.sample} --fasta {REF} -p 1 --genotype {input.bam}"
-        "smoove call --outdir /proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/ --exclude {EXCLUDE} –name {wildcards.sample} --fasta {REF} -p 1 --genotype {input.cram}"
+        #"smoove call --outdir smoove/results/ --exclude {EXCLUDE} –name {wildcards.wolf} --fasta {REF} -p 1 --genotype {input.bam}"
+        "smoove call --outdir out/smoove/results/ --exclude {EXCLUDE} --name {wildcards.wolf} --fasta {REF} -p 1 --genotype {input.cram}"
 rule merge:
     input:
-        vcf=expand("/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/{sample}-smoove.genotyped.vcf.gz",
-        sample=SAMPLES)
+        vcf=expand("out/smoove/results/{wolf}.smoove.genotyped.vcf.gz",
+        wolf=WOLVES)
     output:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/merged.sites.vcf.gz"
+        "out/smoove/results/merged.sites.vcf.gz"
     log:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/merge/merged.sites.log"
-    conda:
-        "smoove_conda_env.yaml"
+        "logs/merge/merged.sites.log"
+    singularity:
+        "smoove_latest.sif"
     shell:
-        "smoove merge --name merged -f {REF} --outdir /proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/ {input.vcf}"
+        "smoove merge --name merged -f {REF} --outdir out/smoove/results/ {input.vcf}"
 rule genotype:
     input:
-        merge="/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/merged.sites.vcf.gz",
-        #bam="sorted_reads/{sample}.bam"
-        cram="data/raw_data/cram/{sample}.merged.md.real.fm.recal.cram"
+        merge="out/smoove/results/merged.sites.vcf.gz",
+        #bam="sorted_reads/{wolf}.bam"
+        cram="data/raw_data/kardos2018/{wolf}.merged.md.real.fm.recal.cram"
     output:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/{sample}-joint-smoove.genotyped.vcf.gz"
+        "out/smoove/results/genotyped/{wolf}.joint.smoove.genotyped.vcf.gz"
     log:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/genotype/{sample}.log"
-    conda:
-        "smoove_conda_env.yaml"
+        "logs/genotype/{wolf}.log"
+    singularity:
+        "smoove_latest.sif"
     shell:
-        #"smoove genotype -d -x -p 1 --name {wildcards.sample}-joint –outdir smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.bam}"
-        "smoove genotype -d -x -p 1 --name {wildcards.sample}-joint –outdir /proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.cram}"
+        #"smoove genotype -d -x -p 1 --name {wildcards.wolf}-joint –outdir smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.bam}"
+        "smoove genotype -d -x -p 1 --name {wildcards.wolf}.joint --outdir out/smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.cram}"
 rule paste:
     input:
-        vcf=expand("/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/{sample}-joint-smoove.genotyped.vcf.gz", 
-        sample=SAMPLES)
+        vcf=expand("out/smoove/results/genotyped/{wolf}.joint.smoove.genotyped.vcf.gz", 
+        wolf=WOLVES)
     output:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/paste/cohort.vcf.gz"
+        "out/smoove/results/genotyped/paste/cohort.vcf.gz"
     log:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/paste/cohort.log"
-    conda:
-        "smoove_conda_env.yaml"
+        "logs/paste/cohort.log"
+    singularity:
+        "smoove_latest.sif"
     shell:
         "smoove paste --name cohort {input.vcf}"
 
 rule annotate:
     input:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/paste/cohort.vcf.gz"
+        "out/smoove/results/genotyped/paste/cohort.vcf.gz"
     output:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/out/smoove/results/genotyped/paste/cohort.smoove.square.anno.vcf.gz"
+        "out/smoove/results/genotyped/paste/cohort.smoove.square.anno.vcf.gz"
     log:
-        "/proj/sllstore2017/nobackup/work/lars/thesis/logs/annotate/cohort.smoove.anno.log"
-    conda:
-        "smoove_conda_env.yaml"
+        "logs/annotate/cohort.smoove.anno.log"
+    singularity:
+        "smoove_latest.sif"
     shell:
         "smoove annotate --gff {GFF} {input} | bgzip -c > {output}"

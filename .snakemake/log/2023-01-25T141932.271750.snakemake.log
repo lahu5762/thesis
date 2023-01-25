@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+all          1              1              1
+copy         1              1              1
+total        2              1              1
+
+Select jobs to execute...
+
+[Wed Jan 25 14:19:32 2023]
+rule copy:
+    input: data/raw_data/kardos2018/16-D-89-03.merged.md.real.fm.recal.cram
+    output: snake_test/16-D-89-03.txt
+    jobid: 1
+    reason: Missing output files: snake_test/16-D-89-03.txt
+    wildcards: wolf=16-D-89-03
+    resources: tmpdir=/scratch
+
+RuleException in rule copy  in line 7 of /crex/proj/sllstore2017034/nobackup/work/lars/thesis/snaketest:
+NameError: The name 'infile' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}, when formatting the following:
+echo '{infile}.cram' > snake_test/{infile}.txt

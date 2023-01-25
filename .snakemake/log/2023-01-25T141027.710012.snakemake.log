@@ -1,0 +1,6 @@
+TypeError in line 9 of /crex/proj/sllstore2017034/nobackup/work/lars/thesis/snaketest:
+string indices must be integers
+  File "/crex/proj/sllstore2017034/nobackup/work/lars/thesis/snaketest", line 9, in <module>
+  File "/sw/comp/python/3.9.5/rackham/lib/python3.9/string.py", line 165, in vformat
+  File "/sw/comp/python/3.9.5/rackham/lib/python3.9/string.py", line 205, in _vformat
+  File "/sw/comp/python/3.9.5/rackham/lib/python3.9/string.py", line 278, in get_field

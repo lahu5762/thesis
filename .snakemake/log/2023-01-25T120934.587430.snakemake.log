@@ -1,0 +1,3 @@
+NameError in line 9 of /crex/proj/sllstore2017034/nobackup/work/lars/thesis/snaketest:
+name 'TRUE' is not defined
+  File "/crex/proj/sllstore2017034/nobackup/work/lars/thesis/snaketest", line 9, in <module>

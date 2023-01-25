@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule copy  in line 7 of /crex/proj/sllstore2017034/nobackup/work/lars/thesis/snaketest:
+Missing input files for rule copy:
+    output: snake_test/16-D-89-03.txt
+    wildcards: wolf=16-D-89-03
+    affected files:
+        data/raw_data/kardos2018/16-D-89-03.merged.md.2.real.fm.recal.cram
