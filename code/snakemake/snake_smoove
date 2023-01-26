@@ -5,33 +5,33 @@ GFF = "data/raw_data/reference/GCF_000002285.3_CanFam3.1_genomic.gff"
 rule call:
     input:
         #bam="sorted_reads/{wolf}.bam"
-        cram="data/raw_data/kardos2018/{wolf}.merged.md.real.fm.recal.cram"
+        cram="data/raw_data/cram/{wolf}.merged.md.real.fm.recal.cram"
     output:
-        "out/smoove/results/{wolf}.smoove.genotyped.vcf.gz"
+        "out/smoove/results/called/{wolf}.smoove.genotyped.vcf.gz"
     log:
         "logs/call/{wolf}.log"
     singularity:
         "smoove_latest.sif"
     shell:
         #"smoove call --outdir smoove/results/ --exclude {EXCLUDE} –name {wildcards.wolf} --fasta {REF} -p 1 --genotype {input.bam}"
-        "smoove call --outdir out/smoove/results/ --exclude {EXCLUDE} --name {wildcards.wolf} --fasta {REF} -p 1 --genotype {input.cram}"
+        "smoove call --outdir out/smoove/results/called/ --exclude {EXCLUDE} --name {wildcards.wolf} --fasta {REF} -p 1 --genotype {input.cram}"
 rule merge:
     input:
-        vcf=expand("out/smoove/results/{wolf}.smoove.genotyped.vcf.gz",
+        vcf=expand("out/smoove/results/called/{wolf}.smoove.genotyped.vcf.gz",
         wolf=WOLVES)
     output:
-        "out/smoove/results/merged.sites.vcf.gz"
+        "out/smoove/results/called/merged.sites.vcf.gz"
     log:
         "logs/merge/merged.sites.log"
     singularity:
         "smoove_latest.sif"
     shell:
-        "smoove merge --name merged -f {REF} --outdir out/smoove/results/ {input.vcf}"
+        "smoove merge --name merged -f {REF} --outdir out/smoove/results/called/ {input.vcf}"
 rule genotype:
     input:
-        merge="out/smoove/results/merged.sites.vcf.gz",
+        merge="out/smoove/results/called/merged.sites.vcf.gz",
         #bam="sorted_reads/{wolf}.bam"
-        cram="data/raw_data/kardos2018/{wolf}.merged.md.real.fm.recal.cram"
+        cram="data/raw_data/cram/{wolf}.merged.md.real.fm.recal.cram"
     output:
         "out/smoove/results/genotyped/{wolf}.joint.smoove.genotyped.vcf.gz"
     log:

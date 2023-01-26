@@ -1,6 +1,8 @@
 /data/*
 !/data/raw_data/cram
 /out/*
+/logs/*
+/.snakemake
 smoove_latest.sif
 /notes
 /cramfiles.txt
