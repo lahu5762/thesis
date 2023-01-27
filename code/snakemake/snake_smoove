@@ -7,7 +7,7 @@ rule call:
         #bam="sorted_reads/{wolf}.bam"
         cram="data/raw_data/cram/{wolf}.merged.md.real.fm.recal.cram"
     output:
-        "out/smoove/results/called/{wolf}.smoove.genotyped.vcf.gz"
+        "out/smoove/results/called/{wolf}-smoove.genotyped.vcf.gz"
     log:
         "logs/call/{wolf}.log"
     singularity:
@@ -17,7 +17,7 @@ rule call:
         "smoove call --outdir out/smoove/results/called/ --exclude {EXCLUDE} --name {wildcards.wolf} --fasta {REF} -p 1 --genotype {input.cram}"
 rule merge:
     input:
-        vcf=expand("out/smoove/results/called/{wolf}.smoove.genotyped.vcf.gz",
+        vcf=expand("out/smoove/results/called/{wolf}-smoove.genotyped.vcf.gz",
         wolf=WOLVES)
     output:
         "out/smoove/results/called/merged.sites.vcf.gz"
@@ -33,7 +33,7 @@ rule genotype:
         #bam="sorted_reads/{wolf}.bam"
         cram="data/raw_data/cram/{wolf}.merged.md.real.fm.recal.cram"
     output:
-        "out/smoove/results/genotyped/{wolf}.joint.smoove.genotyped.vcf.gz"
+        "out/smoove/results/genotyped/{wolf}-joint-smoove.genotyped.vcf.gz"
     log:
         "logs/genotype/{wolf}.log"
     singularity:
@@ -43,7 +43,7 @@ rule genotype:
         "smoove genotype -d -x -p 1 --name {wildcards.wolf}.joint --outdir out/smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.cram}"
 rule paste:
     input:
-        vcf=expand("out/smoove/results/genotyped/{wolf}.joint.smoove.genotyped.vcf.gz", 
+        vcf=expand("out/smoove/results/genotyped/{wolf}-joint-smoove.genotyped.vcf.gz", 
         wolf=WOLVES)
     output:
         "out/smoove/results/genotyped/paste/cohort.vcf.gz"

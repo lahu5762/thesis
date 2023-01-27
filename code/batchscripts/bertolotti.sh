@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -A p2018002
 #SBATCH -p core -n 1
-#SBATCH -t 5-15:00:00
+#SBATCH -t 4-22:00:00
 #SBATCH -J TEST_bertolotti 
 #SBATCH -o TEST_bertolotti_out.slurm -e TEST_bertolotti_error.slurm
 #SBATCH --mail-type=ALL
