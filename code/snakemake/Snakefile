@@ -4,4 +4,4 @@ WOLVES = ["16-D-89-03", "17-D-92-05", "19-D-94-01", "30-D-93-02", "31-D-93-03", 
 include: "snake_smoove"    #run smoove
 rule all:
     input:
-        "out/smoove/results/genotyped/paste/cohort.smoove.square.anno.vcf.gz"
+        "out/smoove/results/annotated/cohort.smoove.square.anno.vcf.gz"
