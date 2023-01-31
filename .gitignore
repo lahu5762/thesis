@@ -1,5 +1,5 @@
+!/data/raw_data/*
 /data/*
-!/data/raw_data/cram
 /out/*
 /logs/*
 /.snakemake
