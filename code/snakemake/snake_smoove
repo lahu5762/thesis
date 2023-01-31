@@ -5,7 +5,7 @@ GFF = "data/raw_data/reference/GCF_000002285.3_CanFam3.1_genomic.gff"
 rule call:
     input:
         #bam="sorted_reads/{wolf}.bam"
-        cram="data/raw_data/cram/{wolf}.merged.md.real.fm.recal.cram"
+        cram="data/raw_data/cram/{wolf}.cram"
     output:
         "out/smoove/results/called/{wolf}-smoove.genotyped.vcf.gz"
     log:
@@ -31,7 +31,7 @@ rule genotype:
     input:
         merge="out/smoove/results/called/merged.sites.vcf.gz",
         #bam="sorted_reads/{wolf}.bam"
-        cram="data/raw_data/cram/{wolf}.merged.md.real.fm.recal.cram"
+        cram="data/raw_data/cram/{wolf}.cram"
     output:
         "out/smoove/results/genotyped/{wolf}.joint-smoove.genotyped.vcf.gz"
     log:

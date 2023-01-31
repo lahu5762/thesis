@@ -2,7 +2,7 @@
     "__default__":{
        "account": "p2018002",
        "queue":"core",
-       "time":"1-0:00:00",
+       "time":"1-00:00:00",
        "partition":"core",
        "n":1,
        "name":"{rule}.{wildcards}",
@@ -10,7 +10,8 @@
        "error":"logs/slurm/{rule}.{wildcards}.err"
     },
     "call":{
-       "time":"3-0:00:00"
+       "time":"3-0:00:00",
+       "n":2
     },
     "genotype":{
        "time":"3-0:00:00"

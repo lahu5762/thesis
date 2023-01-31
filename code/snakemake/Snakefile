@@ -1,5 +1,4 @@
-WOLVES = ["16-D-89-03", "17-D-92-05", "19-D-94-01", "30-D-93-02", "31-D-93-03", "3-D-86-01"]#,
-            #"4-D-89-01", "57-D-92-06", "5-D-91-01", "6-M-98-02", "D-84-03", "D-85-02"]
+WOLVES = glob_wildcards("data/raw_data/cram/{wolf}.cram")
 
 include: "snake_smoove"    #run smoove
 rule all:
