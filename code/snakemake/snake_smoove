@@ -14,7 +14,7 @@ rule call:
         "smoove_latest.sif"
     shell:
         #"smoove call --outdir smoove/results/ --exclude {EXCLUDE} –name {wildcards.wolf} --fasta {REF} -p 1 --genotype {input.bam}"
-        "smoove call --outdir out/smoove/results/called/ --exclude {EXCLUDE} --name {wildcards.wolf} --fasta {REF} -p 1 --genotype {input.cram}"
+        "smoove call --outdir out/smoove/results/called/ --exclude {EXCLUDE} --name {wildcards.wolf} --fasta {REF} -p 4 --genotype {input.cram}"
 rule merge:
     input:
         vcf=expand("out/smoove/results/called/{wolf}-smoove.genotyped.vcf.gz",
@@ -40,7 +40,7 @@ rule genotype:
         "smoove_latest.sif"
     shell:
         #"smoove genotype -d -x -p 1 --name {wildcards.wolf}-joint –outdir smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.bam}"
-        "smoove genotype -d -x -p 1 --name {wildcards.wolf}.joint --outdir out/smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.cram}"
+        "smoove genotype -d -x -p 2 --name {wildcards.wolf}.joint --outdir out/smoove/results/genotyped/ --fasta {REF} --vcf {input.merge} {input.cram}"
 rule paste:
     input:
         vcf=expand("out/smoove/results/genotyped/{wolf}.joint-smoove.genotyped.vcf.gz", 

@@ -2,18 +2,21 @@
     "__default__":{
        "account": "p2018002",
        "queue":"core",
-       "time":"1-00:00:00",
+       "time":"3-00:00:00",
        "partition":"core",
        "n":1,
        "name":"{rule}.{wildcards}",
        "output":"logs/slurm/{rule}.{wildcards}.out",
-       "error":"logs/slurm/{rule}.{wildcards}.err"
+       "error":"logs/slurm/{rule}.{wildcards}.err",
+       "email":"lars.huson.5762@student.uu.se",
+       "mailtype":"FAIL"
     },
     "call":{
-       "time":"3-0:00:00",
-       "n":2
+       "time":"5-0:00:00",
+       "n":4
     },
     "genotype":{
-       "time":"3-0:00:00"
+       "time":"5-0:00:00",
+       "n":2
     }
  }
