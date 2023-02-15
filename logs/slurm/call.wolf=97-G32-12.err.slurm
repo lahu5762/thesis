@@ -5,7 +5,7 @@ Rules claiming more threads will be scaled down.
 Provided resources: mem_mb=126621, disk_mb=126621
 Select jobs to execute...
 
-[Tue Feb  7 18:36:34 2023]
+[Wed Feb  8 16:25:13 2023]
 rule call:
     input: data/raw_data/cram/97-G32-12.cram
     output: out/smoove/results/called/97-G32-12-smoove.genotyped.vcf.gz
@@ -13,2058 +13,3891 @@ rule call:
     jobid: 0
     reason: Missing output files: out/smoove/results/called/97-G32-12-smoove.genotyped.vcf.gz
     wildcards: wolf=97-G32-12
-    resources: mem_mb=126621, disk_mb=126621, tmpdir=/scratch/33578962
+    resources: mem_mb=126621, disk_mb=126621, tmpdir=/scratch/33646457
 
 Activating singularity image smoove_latest.sif
-[smoove] 2023/02/07 18:36:36 starting with version 0.2.6
-[smoove] 2023/02/07 18:36:36 calculating bam stats for 1 bams
-[smoove] 2023/02/07 18:36:54 done calculating bam stats
-[smoove]: ([E]lumpy-filter) 2023/02/07 19:27:51 Failed to populate reference for id 394
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:08 Failed to populate reference for id 583
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:14 Failed to populate reference for id 687
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:14 Failed to populate reference for id 688
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:14 Failed to populate reference for id 688
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:16 Failed to populate reference for id 716
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:21 Failed to populate reference for id 792
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:22 Failed to populate reference for id 813
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:26 Failed to populate reference for id 859
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:27 Failed to populate reference for id 871
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:28 Failed to populate reference for id 890
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:28 Failed to populate reference for id 890
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:29 Failed to populate reference for id 907
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:30 Failed to populate reference for id 915
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:31 Failed to populate reference for id 943
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:32 Failed to populate reference for id 952
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:32 Failed to populate reference for id 959
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:33 Failed to populate reference for id 967
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:33 Failed to populate reference for id 980
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:36 Failed to populate reference for id 1031
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:38 Failed to populate reference for id 1054
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:40 Failed to populate reference for id 1084
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:41 Failed to populate reference for id 1106
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:41 Failed to populate reference for id 1106
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:41 Failed to populate reference for id 1106
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:42 Failed to populate reference for id 1115
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:42 Failed to populate reference for id 1115
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:43 Failed to populate reference for id 1136
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:43 Failed to populate reference for id 1146
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:43 Failed to populate reference for id 1152
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:44 Failed to populate reference for id 1171
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:44 Failed to populate reference for id 1175
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:47 Failed to populate reference for id 1228
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:47 Failed to populate reference for id 1228
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:48 Failed to populate reference for id 1236
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:48 Failed to populate reference for id 1236
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:49 Failed to populate reference for id 1243
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:52 Failed to populate reference for id 1308
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:52 Failed to populate reference for id 1315
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:52 Failed to populate reference for id 1315
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:52 Failed to populate reference for id 1315
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:54 Failed to populate reference for id 1351
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:54 Failed to populate reference for id 1352
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:54 Failed to populate reference for id 1352
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:55 Failed to populate reference for id 1361
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:56 Failed to populate reference for id 1389
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:58 Failed to populate reference for id 1409
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:58 Failed to populate reference for id 1412
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:58 Failed to populate reference for id 1420
-[smoove]:([E]lumpy-filter) 2023/02/07 19:28:59 Failed to populate reference for id 1441
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:01 Failed to populate reference for id 1468
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:02 Failed to populate reference for id 1499
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:02 Failed to populate reference for id 1499
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:02 Failed to populate reference for id 1499
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:03 Failed to populate reference for id 1512
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:04 Failed to populate reference for id 1540
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:05 Failed to populate reference for id 1548
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:07 Failed to populate reference for id 1584
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:07 Failed to populate reference for id 1591
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:07 Failed to populate reference for id 1596
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:09 Failed to populate reference for id 1627
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:09 Failed to populate reference for id 1627
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:10 Failed to populate reference for id 1651
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:10 Failed to populate reference for id 1652
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:11 Failed to populate reference for id 1676
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:14 Failed to populate reference for id 1756
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:17 Failed to populate reference for id 1832
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:17 Failed to populate reference for id 1838
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:17 Failed to populate reference for id 1839
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:18 Failed to populate reference for id 1858
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:18 Failed to populate reference for id 1870
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:18 Failed to populate reference for id 1880
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:23 Failed to populate reference for id 1985
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:23 Failed to populate reference for id 1990
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:24 Failed to populate reference for id 1999
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:26 Failed to populate reference for id 2060
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:26 Failed to populate reference for id 2073
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:26 Failed to populate reference for id 2079
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:27 Failed to populate reference for id 2097
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:28 Failed to populate reference for id 2127
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:28 Failed to populate reference for id 2133
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:28 Failed to populate reference for id 2140
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:29 Failed to populate reference for id 2165
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:30 Failed to populate reference for id 2202
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:30 Failed to populate reference for id 2203
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:31 Failed to populate reference for id 2216
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:31 Failed to populate reference for id 2222
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:33 Failed to populate reference for id 2278
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:34 Failed to populate reference for id 2310
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:34 Failed to populate reference for id 2311
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:34 Failed to populate reference for id 2311
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:35 Failed to populate reference for id 2311
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:35 Failed to populate reference for id 2318
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:35 Failed to populate reference for id 2324
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:35 Failed to populate reference for id 2324
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:36 Failed to populate reference for id 2351
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:36 Failed to populate reference for id 2363
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:37 Failed to populate reference for id 2390
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:38 Failed to populate reference for id 2417
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:39 Failed to populate reference for id 2435
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:39 Failed to populate reference for id 2443
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:39 Failed to populate reference for id 2444
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:41 Failed to populate reference for id 2490
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:42 Failed to populate reference for id 2509
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:45 Failed to populate reference for id 2603
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:46 Failed to populate reference for id 2630
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:46 Failed to populate reference for id 2645
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:46 Failed to populate reference for id 2651
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:47 Failed to populate reference for id 2671
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:48 Failed to populate reference for id 2716
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:48 Failed to populate reference for id 2731
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:49 Failed to populate reference for id 2757
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:49 Failed to populate reference for id 2766
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:50 Failed to populate reference for id 2810
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:51 Failed to populate reference for id 2836
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:53 Failed to populate reference for id 2890
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:54 Failed to populate reference for id 2941
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:55 Failed to populate reference for id 2966
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:55 Failed to populate reference for id 2968
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:55 Failed to populate reference for id 2990
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:56 Failed to populate reference for id 3004
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:56 Failed to populate reference for id 3010
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:56 Failed to populate reference for id 3028
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:56 Failed to populate reference for id 3038
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:57 Failed to populate reference for id 3046
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:58 Failed to populate reference for id 3089
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:58 Failed to populate reference for id 3099
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:58 Failed to populate reference for id 3109
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:58 Failed to populate reference for id 3111
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:59 Failed to populate reference for id 3130
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:59 Failed to populate reference for id 3141
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:59 Failed to populate reference for id 3148
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:59 Failed to populate reference for id 3155
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:59 Failed to populate reference for id 3156
-[smoove]:([E]lumpy-filter) 2023/02/07 19:29:59 Failed to populate reference for id 3161
-[smoove]:([E]lumpy-filter) 2023/02/07 19:30:00 Failed to populate reference for id 3171
-[smoove]:([E]lumpy-filter) 2023/02/07 19:30:00 Failed to populate reference for id 3182
-[smoove]:([E]lumpy-filter) 2023/02/07 19:30:00 Failed to populate reference for id 3188
-[smoove]:([E]lumpy-filter) 2023/02/07 19:30:00 Failed to populate reference for id 3203
-[smoove]:([E]lumpy-filter) 2023/02/07 19:30:00 Failed to populate reference for id 3217
-[smoove]:([E]lumpy-filter) 2023/02/07 19:30:01 Failed to populate reference for id 3230
-[smoove]:([E]lumpy-filter) 2023/02/07 19:30:01 Failed to populate reference for id 3233
-[smoove]:([E]lumpy-filter) 2023/02/07 19:30:31 [lumpy_filter] extracted splits and discordants from 448434332 total aligned reads
-[smoove]:2023/02/07 19:30:41 finished process: lumpy-filter (set -eu; lumpy_filter -f data/raw_data/reference/Canis_familiaris.CanFam3.1.dna.toplevel.fa data/raw) in user-time:1h19m3.557686s system-time:2m51.968554s
-[smoove] 2023/02/07 19:40:17 removed 10644780 alignments out of 22817069 (46.65%) with low mapq, depth > 1000, or from excluded chroms from 97-G32-12.disc.bam in 577 seconds
-[smoove] 2023/02/07 19:40:17 removed 1565413 alignments out of 22817069 (6.86%) that were bad interchromosomals or flanked-splitters from 97-G32-12.disc.bam
-[smoove] 2023/02/07 19:45:49 kept 68391 putative orphans
-[smoove] 2023/02/07 19:45:49 removed 2885086 discordant orphans in 214 seconds
-[smoove] 2023/02/07 19:49:16 removed 8352531 singletons and isolated interchromosomals of 10606876 reads (78.75%) from 97-G32-12.disc.bam in 539 seconds
-[smoove] 2023/02/07 19:49:16 2254345 reads (9.88%) of the original 22817069 remain from 97-G32-12.disc.bam
-[smoove] 2023/02/07 19:53:48 removed 6692705 alignments out of 12208875 (54.82%) with low mapq, depth > 1000, or from excluded chroms from 97-G32-12.split.bam in 268 seconds
-[smoove] 2023/02/07 19:53:48 removed 1301279 alignments out of 12208875 (10.66%) that were bad interchromosomals or flanked-splitters from 97-G32-12.split.bam
-[smoove] 2023/02/07 20:04:33 kept 778936 putative orphans
-[smoove] 2023/02/07 20:04:33 removed 206772 split orphans in 468 seconds
-[smoove] 2023/02/07 20:05:43 removed 1854998 singletons of 4214891 reads (44.01%) from 97-G32-12.split.bam in 715 seconds
-[smoove] 2023/02/07 20:05:43 2359893 reads (19.33%) of the original 12208875 remain from 97-G32-12.split.bam
-[smoove] 2023/02/07 20:05:46 starting lumpy
-[smoove] 2023/02/07 20:05:46 wrote lumpy command to out/smoove/results/called//97-G32-12-lumpy-cmd.sh
-[smoove] 2023/02/07 20:05:46 writing sorted, indexed file to out/smoove/results/called/97-G32-12-smoove.genotyped.vcf.gz
-[smoove] 2023/02/07 20:05:46 excluding variants with all unknown or homozygous reference genotypes
-[smoove] 2023/02/07 20:05:47 > gsort version 0.0.6
-[smoove] 2023/02/07 20:05:47 1	1000000
-[smoove] 2023/02/07 20:06:02 10
-[smoove] 2023/02/07 20:06:02 	1000000
-[smoove] 2023/02/07 20:06:50 11	1000000
-[smoove] 2023/02/07 20:08:28 12
-[smoove] 2023/02/07 20:08:28 	1000000
-[smoove] 2023/02/07 20:09:21 13	1000000
-[smoove] 2023/02/07 20:10:58 14	1000000
-[smoove] 2023/02/07 20:11:49 15
-[smoove] 2023/02/07 20:11:49 	
-[smoove] 2023/02/07 20:11:49 1000000
-[smoove] 2023/02/07 20:11:49 
-[smoove] 2023/02/07 20:12:47 16	1000000
-[smoove] 2023/02/07 20:14:31 17	1000000
-[smoove] 2023/02/07 20:15:21 18	1000000
-[smoove] 2023/02/07 20:15:21 
-[smoove] 2023/02/07 20:16:15 19	1000000
-[smoove] 2023/02/07 20:16:15 
-[smoove] 2023/02/07 20:17:08 2	
-[smoove] 2023/02/07 20:17:08 1000000
-[smoove] 2023/02/07 20:18:45 20	1000000
-[smoove] 2023/02/07 20:19:39 21	1000000
-[smoove] 2023/02/07 20:21:13 22	1000000
-[smoove] 2023/02/07 20:22:03 23	1000000
-[smoove] 2023/02/07 20:22:48 24	1000000
-[smoove] 2023/02/07 20:22:48 
-[smoove] 2023/02/07 20:23:35 25	1000000
-[smoove] 2023/02/07 20:24:22 26	1000000
-[smoove] 2023/02/07 20:25:09 27	1000000
-[smoove] 2023/02/07 20:26:01 28	1000000
-[smoove] 2023/02/07 20:26:59 29	1000000
-[smoove] 2023/02/07 20:26:59 
-[smoove] 2023/02/07 20:27:48 3	1000000
-[smoove] 2023/02/07 20:29:21 30	1000000
-[smoove] 2023/02/07 20:30:12 31
-[smoove] 2023/02/07 20:30:12 	
-[smoove] 2023/02/07 20:30:12 1000000
-[smoove] 2023/02/07 20:30:12 
-[smoove] 2023/02/07 20:31:05 32	1000000
-[smoove] 2023/02/07 20:31:51 33	1000000
-[smoove] 2023/02/07 20:31:55 34	1000000
-[smoove] 2023/02/07 20:32:45 35	1000000
-[smoove] 2023/02/07 20:33:34 36	1000000
-[smoove] 2023/02/07 20:34:16 37	1000000
-[smoove] 2023/02/07 20:34:21 38	1000000
-[smoove] 2023/02/07 20:35:07 4	1000000
-[smoove] 2023/02/07 20:36:45 5	1000000
-[smoove] 2023/02/07 20:38:25 6
-[smoove] 2023/02/07 20:38:25 	
-[smoove] 2023/02/07 20:38:25 1000000
-[smoove] 2023/02/07 20:38:25 
-[smoove] 2023/02/07 20:39:18 7	1000000
-[smoove] 2023/02/07 20:41:07 8	1000000
-[smoove] 2023/02/07 20:42:49 9	1000000
-[smoove] 2023/02/07 20:43:39 MT	1000000
-[smoove] 2023/02/07 20:43:42 X	1000000
-[smoove] 2023/02/07 20:45:25 JH373233.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373234.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373235.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373236.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373238.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373237.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373239.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373241.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373240.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373244.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373242.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373249.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373243.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373250.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373245.1	1000000
-[smoove] 2023/02/07 20:45:25 JH373253.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373246.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373252.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373247.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373248.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373254.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373265.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373260.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373251.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03018827.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373258.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373278.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373256.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373255.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373259.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373257.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373261.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373262.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373263.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373268.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373281.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373264.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373284.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373267.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373266.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373269.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373336.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373273.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373272.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373270.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373271.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373335.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373371.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373276.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373274.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373275.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373277.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373280.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03019065.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373290.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373286.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373279.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03019090.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373283.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373282.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03019097.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373287.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373288.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373285.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373289.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373291.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373292.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373293.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373294.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373295.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373306.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373296.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373299.1	1000000
-JH373298.1	1000000
-JH373297.1	1000000
-AAEX03019222.1	1000000
-AAEX03019231.1	1000000
-JH373304.1	1000000
-JH373300.1	1000000
-JH373303.1	1000000
-AAEX03019240.1	1000000
-JH373315.1	1000000
-JH373302.1	1000000
-JH373301.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03019241.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373319.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373307.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373305.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373316.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373308.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373310.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03019307.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373313.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373309.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373311.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373318.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373312.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03019339.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03019340.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373350.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03019341.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373314.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373324.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373332.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373321.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373317.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373320.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373344.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373348.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373322.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373327.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373325.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373323.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373367.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373326.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373376.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373443.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373341.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373394.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373343.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373380.1	1000000
-[smoove] 2023/02/07 20:45:26 AAEX03019443.1	1000000
-[smoove] 2023/02/07 20:45:26 JH373361.1	1000000
-JH373334.1
-[smoove] 2023/02/07 20:45:26 	1000000
-[smoove] 2023/02/07 20:45:27 JH373328.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373329.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373362.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373432.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373355.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373389.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019490.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373342.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019491.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373331.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373333.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373337.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019492.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373356.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019535.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373345.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373346.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373354.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373340.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373351.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019548.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019560.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373339.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373338.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373347.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373353.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373419.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373349.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373352.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373436.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373383.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373382.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373368.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373421.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373446.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373396.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373370.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373477.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373387.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373357.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019681.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373503.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373451.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019691.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373358.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373365.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373494.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373359.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373385.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019738.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373360.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373364.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019763.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373363.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373467.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373369.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373372.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373424.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373480.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373476.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373407.1
-[smoove] 2023/02/07 20:45:27 	1000000
-[smoove] 2023/02/07 20:45:27 JH373386.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373374.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373373.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373375.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373377.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373379.1
-[smoove] 2023/02/07 20:45:27 	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373442.1
-[smoove] 2023/02/07 20:45:27 	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 AAEX03019872.1
-[smoove] 2023/02/07 20:45:27 	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373384.1
-[smoove] 2023/02/07 20:45:27 	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 AAEX03019893.1
-[smoove] 2023/02/07 20:45:27 	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373408.1
-[smoove] 2023/02/07 20:45:27 	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373473.1
-[smoove] 2023/02/07 20:45:27 	1000000
-[smoove] 2023/02/07 20:45:27 JH373505.1
-[smoove] 2023/02/07 20:45:27 	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373393.1
-[smoove] 2023/02/07 20:45:27 	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373500.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373474.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373445.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373388.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373398.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373411.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373420.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373540.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373450.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373452.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373397.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373392.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373481.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373438.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373401.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373395.1
-[smoove] 2023/02/07 20:45:27 	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 JH373439.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03019987.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373527.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373549.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373418.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373745.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373405.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373512.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373399.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373496.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373402.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020051.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373417.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373475.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373403.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020054.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373517.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373433.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020056.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373501.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373568.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373521.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373468.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373435.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373404.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020060.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373588.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373479.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020068.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373622.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373536.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373410.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020105.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373681.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373415.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373413.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373434.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373423.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373430.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020161.1
-[smoove] 2023/02/07 20:45:27 	1000000
-[smoove] 2023/02/07 20:45:27 JH373465.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373566.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373548.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373461.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020170.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373558.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373457.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373560.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373614.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373464.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373426.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373444.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373526.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373460.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373429.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020242.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373488.1	1000000
-[smoove] 2023/02/07 20:45:27 JH374024.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373472.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373463.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373431.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373440.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373604.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373441.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373478.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373437.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020335.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373449.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373454.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373447.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373453.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373462.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020381.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373458.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373703.1	1000000
-[smoove] 2023/02/07 20:45:27 JH374035.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373519.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020403.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373448.1	1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373513.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020427.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373580.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373507.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020436.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373471.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373613.1	1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373542.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373487.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373455.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373520.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373456.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020482.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373576.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373459.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020487.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373575.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373466.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020497.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373644.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373489.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373469.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373529.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020524.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373528.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373643.1	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 JH373470.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020533.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373807.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373626.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373486.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020568.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373572.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373574.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373840.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373541.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373571.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020574.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373624.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020588.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020610.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373484.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373504.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373485.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373754.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373577.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373672.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373663.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373483.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373538.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373482.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373497.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020671.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373493.1	1000000
-JH373724.1	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 JH373670.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020700.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020701.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373609.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373649.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373630.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373570.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373660.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373646.1
-[smoove] 2023/02/07 20:45:27 	1000000
-[smoove] 2023/02/07 20:45:27 JH373508.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373661.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373498.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020729.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373506.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373495.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373666.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373492.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373491.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373525.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373602.1	1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373514.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020760.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020761.1	1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373510.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373502.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373714.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373523.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373516.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020831.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373777.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373650.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020839.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373564.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020840.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373725.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373511.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373518.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373645.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373687.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373543.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373774.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373581.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373509.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373641.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373744.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373515.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373674.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373675.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020896.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373531.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020910.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373522.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020926.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373534.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373757.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020959.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020963.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373595.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373710.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020982.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373677.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373616.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03020983.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373533.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373683.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021041.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373628.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021042.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373597.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021043.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021044.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373553.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373653.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021070.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373787.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373562.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021071.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021077.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021094.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373642.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021108.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373550.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373547.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373723.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373600.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373800.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373647.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021139.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373555.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373565.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373606.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373557.1	1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 AAEX03021187.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373559.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373617.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021193.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021208.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373619.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373561.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373601.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373639.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373830.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021227.1
-[smoove] 2023/02/07 20:45:27 	1000000
-[smoove] 2023/02/07 20:45:27 JH373793.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373692.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373746.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373567.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021268.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373699.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373598.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021281.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373694.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021282.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373585.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021318.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373658.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373582.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373713.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373817.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373599.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373782.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373579.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373685.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021345.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021372.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373704.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373629.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373583.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373784.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373785.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373753.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373608.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373586.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373591.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373635.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373603.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021408.1	1000000
-JH373592.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373802.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021437.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373667.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021458.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021463.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373655.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373943.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373640.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373853.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021489.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373712.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373727.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373689.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373799.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021540.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373615.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373719.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373876.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373706.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373759.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021599.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373627.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373632.1	1000000
-[smoove] 2023/02/07 20:45:27 
-[smoove] 2023/02/07 20:45:27 JH373648.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373776.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021660.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373631.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373735.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021682.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373892.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373656.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373707.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373633.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373637.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373781.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021701.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373636.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373990.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021719.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373763.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373760.1	
-[smoove] 2023/02/07 20:45:27 1000000
-[smoove] 2023/02/07 20:45:27 JH373680.1	1000000
-AAEX03021736.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373749.1	1000000
-[smoove] 2023/02/07 20:45:27 JH373671.1	1000000
-[smoove] 2023/02/07 20:45:27 AAEX03021761.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373832.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373878.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373797.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373682.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373668.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021790.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021800.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373887.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373775.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373690.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373809.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021841.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373860.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021842.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373691.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373963.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373657.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373792.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021849.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021853.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021854.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373698.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373659.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373829.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373679.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373873.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021919.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373705.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021932.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373856.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373676.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373684.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373858.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373904.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373863.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021979.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03021981.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373688.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373701.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022003.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022020.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022030.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022031.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373733.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022032.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374009.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373700.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373693.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022044.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373708.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022057.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373907.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022060.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373882.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022061.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022063.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373805.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373946.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022069.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373779.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022081.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373836.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022082.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022083.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373756.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373875.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373728.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373844.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373750.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022122.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022123.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373717.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022140.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373766.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022141.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373715.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373778.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022149.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373847.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373726.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373762.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022157.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373767.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022171.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022189.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022193.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373730.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022194.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022202.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373886.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022203.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022204.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022211.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022212.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373993.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374006.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373855.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374031.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373764.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022223.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373964.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373925.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373722.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022239.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03022240.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373826.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373765.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373752.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022242.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022243.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022244.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373811.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022256.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022262.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373739.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373981.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022291.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373751.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373788.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022299.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03022301.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022317.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373914.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373841.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373827.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022329.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373741.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022332.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022348.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022357.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022359.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022368.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022378.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373906.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022384.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022390.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022391.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022392.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373791.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373795.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022395.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373850.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022441.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373818.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022474.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022475.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373770.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373941.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022476.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022477.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022483.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373783.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373822.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373852.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373771.1	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022496.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373796.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373888.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373812.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373810.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373801.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373794.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022555.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373843.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022578.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022579.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022582.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373910.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022592.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373804.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022606.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373930.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373861.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022624.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374017.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373900.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022659.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373934.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373889.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373806.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373937.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373935.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373808.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373814.1
-[smoove] 2023/02/07 20:45:28 	1000000
-[smoove] 2023/02/07 20:45:28 JH373819.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373845.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022691.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022692.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374004.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022706.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022707.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022712.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373891.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022713.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373921.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022724.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373821.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022735.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022738.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022739.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373898.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022740.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022743.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022744.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373877.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022755.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022756.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373849.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373950.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022760.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022761.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373928.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374069.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373915.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022777.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374038.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373949.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373975.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022786.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373944.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022787.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022788.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373884.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022814.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373880.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022820.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022821.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374053.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373972.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022849.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022858.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373911.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373842.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022863.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373890.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022877.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373954.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022890.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022907.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022909.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373872.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373857.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373869.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373967.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022915.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373916.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374104.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373973.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022941.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022944.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022945.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022980.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373885.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022981.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373966.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022987.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374027.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373918.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373983.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374001.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373868.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03022994.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373933.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023018.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023019.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023030.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373929.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374039.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023045.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023050.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374097.1	1000000
-AAEX03023060.1	1000000
-JH373974.1	1000000
-JH373881.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023077.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023078.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023081.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023082.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374095.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023097.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373920.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373902.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374002.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023107.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023109.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023110.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373970.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023114.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373977.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374008.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374015.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373912.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373895.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373979.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023128.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374020.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023136.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374021.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373969.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023161.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023169.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023172.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374049.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373962.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373926.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023177.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373905.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023201.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373927.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023212.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374047.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023213.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374063.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023229.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373922.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023233.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023234.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373936.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023240.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373952.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374050.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023257.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023258.1
-[smoove] 2023/02/07 20:45:28 	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH373931.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374022.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023275.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023286.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023291.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374026.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373938.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023315.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023323.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023324.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373988.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374071.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374081.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373995.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374029.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023347.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374041.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023355.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023356.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023367.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373997.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023373.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023381.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023386.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023391.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373958.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374060.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373976.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023396.1	1000000
-[smoove] 2023/02/07 20:45:28 JH373971.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023402.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374101.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374079.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023424.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374164.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023426.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023431.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023449.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023450.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023451.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023452.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023453.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023460.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023468.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374163.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023484.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023493.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374023.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023506.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023507.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023508.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023518.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374019.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374117.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023521.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023522.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023523.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023524.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374108.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374091.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023535.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023536.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023537.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023538.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023556.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023557.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023558.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023559.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023563.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374057.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374036.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023582.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374073.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023594.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374109.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023615.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023617.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023624.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023627.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023628.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374106.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023640.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023642.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023645.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023646.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023651.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374114.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023664.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023665.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374007.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023686.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023691.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023693.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374122.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023695.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023696.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023702.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374130.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023725.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374058.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374077.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023732.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023735.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023736.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023738.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023742.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023744.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374133.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374188.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023755.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023757.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374146.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023762.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023765.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023767.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023770.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023772.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023778.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023779.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023782.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374086.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023786.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023794.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374032.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023809.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374124.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023812.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374111.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374171.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023825.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374172.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023826.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023828.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023830.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023831.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023832.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023840.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023847.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374059.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023858.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374151.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023864.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374087.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023883.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023885.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023887.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374042.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023889.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023892.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374152.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023901.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374084.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023920.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023923.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023924.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023925.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023926.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023928.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03023929.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023933.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023935.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023940.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023950.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023952.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374080.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023960.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023968.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023980.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023987.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023990.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374075.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03023999.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024000.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024006.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024011.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024014.1	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 JH374121.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024020.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024022.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374085.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024040.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024043.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024049.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024052.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024063.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024064.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374143.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024071.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374098.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024075.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024076.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024083.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024084.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024088.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024092.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024093.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024097.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024106.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024108.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024113.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024124.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024130.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024137.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024138.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 JH374083.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024143.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024151.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024161.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024162.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024183.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024185.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024186.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374132.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024193.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024194.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024201.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024202.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024207.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374128.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374093.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374157.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024224.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024225.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024226.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024227.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024243.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374177.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024246.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024248.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024257.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374182.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024261.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024268.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024269.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024274.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024277.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024279.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024284.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024296.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374145.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374131.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024314.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024315.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024316.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024319.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024325.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024326.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024332.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024334.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024336.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024340.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024342.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024343.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024349.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374158.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024357.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024358.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024362.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024363.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024364.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024371.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024376.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024377.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024379.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024393.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024400.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024404.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024407.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024411.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024414.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024415.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024422.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024431.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024440.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374142.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024446.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024447.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024452.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024457.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024462.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024464.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024467.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024475.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024481.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024486.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024487.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024488.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024489.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024490.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024495.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024501.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024503.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374139.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024507.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024509.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024511.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024513.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024515.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024518.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024522.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024523.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024525.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024528.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024540.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024543.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024547.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024550.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024553.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024554.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024555.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024556.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024561.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024563.1	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024565.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024569.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024572.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024575.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024581.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024587.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024589.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024593.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024600.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024607.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024610.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024611.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024618.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024619.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024622.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374141.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374183.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024633.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024634.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024646.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024648.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024650.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024655.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024656.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024657.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024659.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374147.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024666.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024667.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024672.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024684.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374189.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024686.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024691.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024693.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024694.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024697.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024698.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024699.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024702.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024709.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024711.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024712.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024713.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024718.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024726.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024730.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024735.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024736.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024740.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024741.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024743.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024745.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024750.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024753.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024754.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024755.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024756.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024759.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024762.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024770.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024772.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024776.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024777.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024782.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024783.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024784.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024789.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374192.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024790.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024791.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024793.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024795.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024796.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024800.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024802.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024803.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024805.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024808.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024811.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024813.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024816.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024819.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024826.1	1000000
-AAEX03024828.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024829.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024839.1	1000000
-AAEX03024844.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024850.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024851.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024852.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024853.1	1000000
-AAEX03024854.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024862.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024867.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024868.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024871.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024879.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024884.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024887.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024892.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024893.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024894.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024897.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024899.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374159.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024905.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024912.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024913.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024917.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024919.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024924.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024925.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024927.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024935.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024936.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024937.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024938.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374175.1	
-[smoove] 2023/02/07 20:45:28 1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024939.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024940.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024941.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03024950.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024953.1
-[smoove] 2023/02/07 20:45:28 	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024954.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024955.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374180.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024958.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024961.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024962.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024963.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024969.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024974.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024975.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024977.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024980.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024981.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03024990.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025000.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025005.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025018.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025020.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025022.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025026.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025027.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025029.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025034.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374165.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025041.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025048.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025053.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025054.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025055.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025059.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025061.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025063.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025065.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374169.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025067.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025076.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025081.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025082.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025087.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025092.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025097.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025101.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025102.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374191.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025110.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025114.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025116.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025121.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025125.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025132.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025134.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025136.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025140.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025141.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025142.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025143.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025144.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374174.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025149.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025150.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025151.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025155.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025157.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025158.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025160.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025162.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025165.1	1000000
-[smoove] 2023/02/07 20:45:28 JH374176.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025170.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025172.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025175.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025178.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025189.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025190.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025192.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025202.1	1000000
-[smoove] 2023/02/07 20:45:28 
-[smoove] 2023/02/07 20:45:28 AAEX03025203.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025205.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025206.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025207.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025209.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025216.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025217.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025220.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025224.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025226.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025228.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025235.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025240.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025241.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025250.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025251.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025252.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025254.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025256.1	1000000
-AAEX03025257.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025260.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025263.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025274.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025276.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025280.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025281.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025283.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025285.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025289.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025291.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025292.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025296.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025302.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025303.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025304.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025316.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025320.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025321.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025323.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025324.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025326.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025328.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025329.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025330.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025333.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025335.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025337.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025343.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025344.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025347.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025353.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025355.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025356.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025358.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025359.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025360.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025363.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025372.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025377.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025378.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025379.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025382.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025385.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025387.1	1000000
-[smoove] 2023/02/07 20:45:28 AAEX03025394.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025399.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025400.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025401.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025402.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025407.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025411.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025415.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025416.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025420.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025422.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025425.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025427.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025433.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025434.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025435.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025440.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025442.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025455.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025463.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025466.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025467.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025469.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025471.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025473.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025476.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025478.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025484.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025486.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025489.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025491.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025495.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025496.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025501.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025502.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025505.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025508.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025511.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025513.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025517.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025518.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025522.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025528.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025537.1	1000000
-[smoove] 2023/02/07 20:45:29 JH374193.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025539.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025540.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025541.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025550.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025564.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025566.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025571.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025573.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025577.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025581.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025583.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025584.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025586.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025597.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025598.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025600.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025601.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025604.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025610.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025612.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025622.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025627.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025628.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025630.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025631.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025636.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025637.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025643.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025647.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025648.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025658.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025659.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025660.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025663.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025667.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025677.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025680.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025684.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025686.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025687.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025689.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025695.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025702.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025704.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025712.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025715.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025717.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025718.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025720.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025721.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025722.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025724.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025726.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025729.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025730.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025731.1
-[smoove] 2023/02/07 20:45:29 	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025735.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025736.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025737.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025742.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025743.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025748.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025749.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025751.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025755.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025757.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025758.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025767.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025768.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025770.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025771.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025777.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025786.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025787.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025788.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025792.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025800.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025805.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025807.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025808.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025811.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025823.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025825.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025833.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025835.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025842.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025843.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025848.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025851.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025856.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025864.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025871.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025873.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025876.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025878.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025886.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025890.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025891.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025896.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025902.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025905.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025907.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025909.1	1000000
-[smoove] 2023/02/07 20:45:29 
-[smoove] 2023/02/07 20:45:29 AAEX03025913.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025917.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025921.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025922.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025924.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025925.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025927.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025939.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025947.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025949.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025953.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025956.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025957.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025959.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025964.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025982.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03025995.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026008.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026010.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026013.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026018.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026020.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026046.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026048.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026055.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026063.1	1000000
-[smoove] 2023/02/07 20:45:29 AAEX03026065.1	1000000
-[smoove] 2023/02/07 20:53:21 wrote sorted, indexed file to out/smoove/results/called/97-G32-12-smoove.genotyped.vcf.gz
-[Tue Feb  7 20:53:26 2023]
+[smoove] 2023/02/08 16:25:14 starting with version 0.2.6
+[smoove] 2023/02/08 16:25:14 calculating bam stats for 1 bams
+[smoove] 2023/02/08 16:25:55 done calculating bam stats
+[smoove] 2023/02/08 16:27:01 removed 0 alignments out of 2254345 (0.00%) with low mapq, depth > 1000, or from excluded chroms from 97-G32-12.disc.bam in 66 seconds
+[smoove] 2023/02/08 16:27:01 removed 0 alignments out of 2254345 (0.00%) that were bad interchromosomals or flanked-splitters from 97-G32-12.disc.bam
+[smoove] 2023/02/08 16:27:02 removed 0 alignments out of 2359893 (0.00%) with low mapq, depth > 1000, or from excluded chroms from 97-G32-12.split.bam in 68 seconds
+[smoove] 2023/02/08 16:27:02 removed 0 alignments out of 2359893 (0.00%) that were bad interchromosomals or flanked-splitters from 97-G32-12.split.bam
+[smoove] 2023/02/08 16:27:45 kept 63542 putative orphans
+[smoove] 2023/02/08 16:27:45 removed 501377 discordant orphans in 24 seconds
+[smoove] 2023/02/08 16:28:08 removed 12022 singletons and isolated interchromosomals of 2254345 reads (0.53%) from 97-G32-12.disc.bam in 67 seconds
+[smoove] 2023/02/08 16:28:08 2242323 reads (99.47%) of the original 2254345 remain from 97-G32-12.disc.bam
+[smoove] 2023/02/08 16:48:41 kept 678418 putative orphans
+[smoove] 2023/02/08 16:48:41 removed 111383 split orphans in 1130 seconds
+[smoove] 2023/02/08 16:49:04 removed 196012 singletons of 2359893 reads (8.31%) from 97-G32-12.split.bam in 1322 seconds
+[smoove] 2023/02/08 16:49:04 2163881 reads (91.69%) of the original 2359893 remain from 97-G32-12.split.bam
+[smoove] 2023/02/08 16:49:07 starting lumpy
+[smoove] 2023/02/08 16:49:07 wrote lumpy command to out/smoove/results/called//97-G32-12-lumpy-cmd.sh
+[smoove] 2023/02/08 16:49:07 writing sorted, indexed file to out/smoove/results/called/97-G32-12-smoove.genotyped.vcf.gz
+[smoove] 2023/02/08 16:49:07 excluding variants with all unknown or homozygous reference genotypes
+[smoove] 2023/02/08 16:49:08 1	1000000
+[smoove] 2023/02/08 16:49:08 > gsort version 0.0.6
+[smoove] 2023/02/08 16:49:22 10	1000000
+[smoove] 2023/02/08 16:49:30 11	1000000
+[smoove] 2023/02/08 16:49:39 12	1000000
+[smoove] 2023/02/08 16:49:48 13	1000000
+[smoove] 2023/02/08 16:49:56 14	1000000
+[smoove] 2023/02/08 16:49:56 
+[smoove] 2023/02/08 16:50:59 15	1000000
+[smoove] 2023/02/08 16:51:30 16	1000000
+[smoove] 2023/02/08 16:51:41 17	1000000
+[smoove] 2023/02/08 16:52:55 18	1000000
+[smoove] 2023/02/08 16:53:14 19	1000000
+[smoove] 2023/02/08 16:53:22 2	1000000
+[smoove] 2023/02/08 16:54:34 20	1000000
+[smoove] 2023/02/08 16:54:50 21
+[smoove] 2023/02/08 16:54:50 	
+[smoove] 2023/02/08 16:54:50 1000000
+[smoove] 2023/02/08 16:54:50 
+[smoove] 2023/02/08 16:55:02 22
+[smoove] 2023/02/08 16:55:02 	1000000
+[smoove] 2023/02/08 16:55:46 23	1000000
+[smoove] 2023/02/08 16:56:00 24	1000000
+[smoove] 2023/02/08 16:56:08 25	1000000
+[smoove] 2023/02/08 16:56:22 26	1000000
+[smoove] 2023/02/08 16:57:02 27	1000000
+[smoove] 2023/02/08 16:57:12 28	
+[smoove] 2023/02/08 16:57:12 1000000
+[smoove] 2023/02/08 16:57:20 29	1000000
+[smoove] 2023/02/08 16:57:35 3	1000000
+[smoove] 2023/02/08 16:58:24 30
+[smoove] 2023/02/08 16:58:24 	1000000
+[smoove] 2023/02/08 16:58:31 31	1000000
+[smoove] 2023/02/08 16:58:48 32	1000000
+[smoove] 2023/02/08 16:58:48 
+[smoove] 2023/02/08 16:59:30 33	1000000
+[smoove] 2023/02/08 16:59:34 34	1000000
+[smoove] 2023/02/08 16:59:40 35
+[smoove] 2023/02/08 16:59:40 	
+[smoove] 2023/02/08 16:59:40 1000000
+[smoove] 2023/02/08 16:59:40 
+[smoove] 2023/02/08 16:59:44 36	1000000
+[smoove] 2023/02/08 17:00:02 37	1000000
+[smoove] 2023/02/08 17:00:06 38	
+[smoove] 2023/02/08 17:00:06 1000000
+[smoove] 2023/02/08 17:00:46 4	1000000
+[smoove] 2023/02/08 17:00:59 5	1000000
+[smoove] 2023/02/08 17:01:51 6	1000000
+[smoove] 2023/02/08 17:02:05 7
+[smoove] 2023/02/08 17:02:05 	1000000
+[smoove] 2023/02/08 17:02:33 8
+[smoove] 2023/02/08 17:02:33 	
+[smoove] 2023/02/08 17:02:33 1000000
+[smoove] 2023/02/08 17:02:33 
+[smoove] 2023/02/08 17:03:11 9	1000000
+[smoove] 2023/02/08 17:03:24 MT	1000000
+[smoove] 2023/02/08 17:03:27 X	
+[smoove] 2023/02/08 17:03:27 1000000
+[smoove] 2023/02/08 17:04:22 JH373233.1	1000000
+[smoove] 2023/02/08 17:04:22 
+[smoove] 2023/02/08 17:04:22 JH373234.1	1000000
+[smoove] 2023/02/08 17:04:22 JH373235.1	1000000
+[smoove] 2023/02/08 17:04:22 JH373236.1
+[smoove] 2023/02/08 17:04:22 	
+[smoove] 2023/02/08 17:04:22 1000000
+[smoove] 2023/02/08 17:04:22 
+[smoove] 2023/02/08 17:04:22 JH373238.1
+[smoove] 2023/02/08 17:04:22 	
+[smoove] 2023/02/08 17:04:22 1000000
+[smoove] 2023/02/08 17:04:22 
+[smoove] 2023/02/08 17:04:22 JH373237.1
+[smoove] 2023/02/08 17:04:22 	
+[smoove] 2023/02/08 17:04:22 1000000
+[smoove] 2023/02/08 17:04:22 
+[smoove] 2023/02/08 17:04:22 JH373239.1
+[smoove] 2023/02/08 17:04:22 	
+[smoove] 2023/02/08 17:04:22 1000000
+[smoove] 2023/02/08 17:04:22 
+[smoove] 2023/02/08 17:04:22 JH373241.1
+[smoove] 2023/02/08 17:04:22 	
+[smoove] 2023/02/08 17:04:22 1000000
+[smoove] 2023/02/08 17:04:22 
+[smoove] 2023/02/08 17:04:23 JH373240.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373244.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373242.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373249.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373243.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373250.1	1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373245.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373253.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373246.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373252.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373247.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373248.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373254.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373265.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373260.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373251.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 AAEX03018827.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373258.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373278.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373256.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373255.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373259.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373257.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373261.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373262.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373263.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373268.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373281.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373264.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373284.1	1000000
+JH373267.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373266.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373269.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373336.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373273.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373272.1	1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373270.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373271.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373335.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373371.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373276.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373274.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373275.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373277.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373280.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 AAEX03019065.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373290.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373286.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373279.1	1000000
+[smoove] 2023/02/08 17:04:23 AAEX03019090.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373283.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373282.1	1000000
+[smoove] 2023/02/08 17:04:23 AAEX03019097.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373287.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373288.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373285.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373289.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373291.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373292.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373293.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373294.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373295.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373306.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373296.1	1000000
+[smoove] 2023/02/08 17:04:23 JH373299.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:23 JH373298.1
+[smoove] 2023/02/08 17:04:23 	
+[smoove] 2023/02/08 17:04:23 1000000
+[smoove] 2023/02/08 17:04:23 
+[smoove] 2023/02/08 17:04:24 JH373297.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03019222.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03019231.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373304.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373300.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373303.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03019240.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373315.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373302.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373301.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03019241.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373319.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373307.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373305.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373316.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373308.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373310.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019307.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373313.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373309.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373311.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373318.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373312.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019339.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019340.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373350.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019341.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373314.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373324.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373332.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373321.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373317.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373320.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373344.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373348.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373322.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373327.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373325.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373323.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373367.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373326.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373376.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373443.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373341.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373394.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373343.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373380.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019443.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373361.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373334.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373328.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373329.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373362.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373432.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373355.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373389.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019490.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373342.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019491.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373331.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373333.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373337.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019492.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373356.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019535.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373345.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373346.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373354.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373340.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373351.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03019548.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03019560.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373339.1	1000000
+JH373338.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373347.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373353.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373419.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373349.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373352.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373436.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373383.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373382.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373368.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373421.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373446.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373396.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373370.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373477.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373387.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373357.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03019681.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373503.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373451.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03019691.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373358.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373365.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373494.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373359.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373385.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019738.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373360.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373364.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019763.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373363.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373467.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373369.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373372.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373424.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373480.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373476.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373407.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373386.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373374.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373373.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373375.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373377.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373379.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373442.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019872.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373384.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03019893.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373408.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373473.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373505.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373393.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373500.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373474.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373445.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373388.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373398.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373411.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373420.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373540.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373450.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373452.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373397.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373481.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373438.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373401.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373395.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373439.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03019987.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373527.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373549.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373418.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373745.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373405.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373512.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373399.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373496.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373402.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020051.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373417.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373475.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373403.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020054.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373517.1	1000000
+JH373433.1	1000000
+AAEX03020056.1	1000000
+JH373501.1	1000000
+JH373568.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373521.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373468.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373435.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373404.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020060.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373588.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373479.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020068.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373622.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373536.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373410.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020105.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373681.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373415.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373413.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373434.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373423.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373430.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020161.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373465.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373566.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373548.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373461.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03020170.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373558.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373457.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373560.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373614.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373464.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373426.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373444.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373526.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373460.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373429.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03020242.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373488.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH374024.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373472.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373463.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373431.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373440.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373604.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373441.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373478.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373437.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 AAEX03020335.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373449.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373454.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373447.1
+[smoove] 2023/02/08 17:04:24 	
+[smoove] 2023/02/08 17:04:24 1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373453.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373462.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020381.1	1000000
+[smoove] 2023/02/08 17:04:24 
+[smoove] 2023/02/08 17:04:24 JH373458.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373703.1	1000000
+[smoove] 2023/02/08 17:04:24 JH374035.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373519.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020403.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373448.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373513.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020427.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373580.1	1000000
+[smoove] 2023/02/08 17:04:24 JH373507.1	1000000
+[smoove] 2023/02/08 17:04:24 AAEX03020436.1	1000000
+JH373471.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373613.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373542.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373487.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373455.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373520.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373456.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020482.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373576.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373459.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020487.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373575.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373466.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020497.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373644.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373489.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373469.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373529.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020524.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373528.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373643.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373470.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020533.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373807.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373626.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373486.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020568.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373572.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373574.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373840.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373541.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373571.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020574.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373624.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020588.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020610.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373484.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373504.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373485.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373754.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373577.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373672.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373663.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373483.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373538.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373482.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373497.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020671.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373493.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373724.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373670.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020700.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020701.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373609.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373649.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373630.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373570.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373660.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373646.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373508.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373661.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373498.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020729.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373506.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373495.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373492.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373491.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373525.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373602.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373514.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020760.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020761.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373510.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373502.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373714.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373523.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373516.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03020831.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373777.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373650.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020839.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373564.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03020840.1
+[smoove] 2023/02/08 17:04:25 	1000000
+[smoove] 2023/02/08 17:04:25 JH373725.1	1000000
+JH373511.1	1000000
+JH373518.1	1000000
+JH373645.1	1000000
+JH373687.1	1000000
+JH373543.1	1000000
+JH373774.1	1000000
+JH373581.1	1000000
+JH373509.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373641.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373744.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373515.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373674.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373675.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020896.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373531.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020910.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373522.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020926.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373534.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373757.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020959.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020963.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373595.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373710.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020982.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373677.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373616.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03020983.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373533.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373683.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021041.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373628.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021042.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373597.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021043.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021044.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373553.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373653.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021070.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373787.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373562.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021071.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021077.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021094.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373642.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021108.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373550.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373547.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373723.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373600.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373800.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373647.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021139.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373555.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373565.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373606.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373557.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021187.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373559.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373617.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021193.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021208.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373619.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373561.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373601.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373639.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373830.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021227.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373793.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373692.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373746.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373567.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021268.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373699.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373598.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021281.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373694.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021282.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373585.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021318.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373658.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373582.1
+[smoove] 2023/02/08 17:04:25 	1000000
+[smoove] 2023/02/08 17:04:25 JH373713.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373817.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373599.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373782.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373579.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373685.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021345.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021372.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373704.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373583.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373784.1	1000000
+JH373785.1	1000000
+JH373753.1	1000000
+JH373608.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373586.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373591.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373635.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373603.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021408.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373592.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373802.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021437.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373667.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021458.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021463.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373655.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373943.1	1000000
+JH373640.1	1000000
+JH373853.1	1000000
+AAEX03021489.1	1000000
+JH373712.1	1000000
+JH373727.1	1000000
+JH373689.1	1000000
+JH373799.1	1000000
+AAEX03021540.1	1000000
+JH373615.1	1000000
+JH373719.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373876.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373706.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373759.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021599.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373627.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373632.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373648.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373776.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021660.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373631.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373735.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03021682.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373892.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373656.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373707.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373633.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373637.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373781.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021701.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373636.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373990.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021719.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373763.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373760.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373680.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021736.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373749.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373671.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021761.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373832.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373878.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373797.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373682.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373668.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021790.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021800.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373887.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373775.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373690.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373809.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021841.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373860.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021842.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373691.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373963.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373657.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373792.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021849.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021853.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021854.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373698.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373659.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373829.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373679.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373873.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021919.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373705.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021932.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373856.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373676.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373684.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373858.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373904.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373863.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021979.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03021981.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373688.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373701.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022003.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022020.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022030.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022031.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373733.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022032.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374009.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373700.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373693.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022044.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373708.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022057.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373907.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022060.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373882.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022061.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022063.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373805.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373946.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022069.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373779.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022081.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373836.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022082.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022083.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373756.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373875.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373728.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373844.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373750.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022122.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022123.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373717.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022140.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373766.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022141.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373715.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373778.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022149.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373847.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373726.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373762.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022157.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373767.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022171.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022189.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022193.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373730.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022194.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022202.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373886.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022203.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022204.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022211.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022212.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373993.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374006.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373855.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374031.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373764.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022223.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373964.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373925.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373722.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022239.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022240.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373826.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373765.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373752.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022242.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022243.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022244.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373811.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022256.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022262.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373739.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373981.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022291.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373751.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373788.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022299.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022301.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022317.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373914.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373841.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373827.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022329.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373741.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022332.1	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022348.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022357.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022359.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022368.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022378.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373906.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022384.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022390.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022391.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022392.1	1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373791.1	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 JH373795.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022395.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373850.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022441.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373818.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022474.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022475.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373770.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373941.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022476.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022477.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022483.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373783.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373822.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373852.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373771.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022496.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373796.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373888.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373812.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373810.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373801.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373794.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022555.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373843.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022578.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022579.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022582.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373910.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022592.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373804.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022606.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373930.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373861.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022624.1	1000000
+[smoove] 2023/02/08 17:04:25 JH374017.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373900.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022659.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373934.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373889.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373806.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373937.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373935.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373808.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373814.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373819.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373845.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022691.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022692.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374004.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022706.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022707.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022712.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373891.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022713.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373921.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022724.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373821.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022735.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022738.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022739.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373898.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022740.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022743.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022744.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373877.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022755.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022756.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373849.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373950.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022760.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022761.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373928.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374069.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373915.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022777.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374038.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373949.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373975.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022786.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373944.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022787.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022788.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373884.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022814.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373880.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022820.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03022821.1	1000000
+[smoove] 2023/02/08 17:04:25 JH374053.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373972.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022849.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022858.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373911.1	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 JH373842.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022863.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373890.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022877.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373954.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022890.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022907.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022909.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373872.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373857.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373869.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373967.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022915.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373916.1	1000000
+[smoove] 2023/02/08 17:04:25 JH374104.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373973.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022941.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022944.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022945.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022980.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373885.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022981.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373966.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022987.1	1000000
+[smoove] 2023/02/08 17:04:25 JH374027.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373918.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373983.1	1000000
+[smoove] 2023/02/08 17:04:25 JH374001.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373868.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03022994.1	1000000
+JH373933.1	1000000
+AAEX03023018.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023019.1	1000000
+AAEX03023030.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373929.1	1000000
+[smoove] 2023/02/08 17:04:25 JH374039.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023045.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023050.1	1000000
+[smoove] 2023/02/08 17:04:25 JH374097.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023060.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373974.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373881.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023077.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023078.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023081.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023082.1	1000000
+[smoove] 2023/02/08 17:04:25 JH374095.1	1000000
+AAEX03023097.1	1000000
+JH373920.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373902.1	1000000
+[smoove] 2023/02/08 17:04:25 JH374002.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023107.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023109.1	1000000
+[smoove] 2023/02/08 17:04:25 AAEX03023110.1	1000000
+[smoove] 2023/02/08 17:04:25 JH373970.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023114.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373977.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374008.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374015.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373912.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373895.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373979.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023128.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374020.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023136.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374021.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373969.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023161.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023169.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023172.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374049.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373962.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373926.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023177.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373905.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023201.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373927.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023212.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374047.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023213.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374063.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023229.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373922.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023233.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023234.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373936.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023240.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH373952.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 JH374050.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023257.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:25 AAEX03023258.1
+[smoove] 2023/02/08 17:04:25 	
+[smoove] 2023/02/08 17:04:25 1000000
+[smoove] 2023/02/08 17:04:25 
+[smoove] 2023/02/08 17:04:26 JH373931.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374022.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03023275.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03023286.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03023291.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374026.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH373938.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023315.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023323.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023324.1	1000000
+[smoove] 2023/02/08 17:04:26 JH373988.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374071.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374081.1	1000000
+[smoove] 2023/02/08 17:04:26 JH373995.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374029.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03023347.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374041.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023355.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023356.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023367.1	1000000
+[smoove] 2023/02/08 17:04:26 JH373997.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023373.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023381.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023386.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023391.1	1000000
+[smoove] 2023/02/08 17:04:26 JH373958.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374060.1	1000000
+[smoove] 2023/02/08 17:04:26 JH373976.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023396.1	1000000
+[smoove] 2023/02/08 17:04:26 JH373971.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023402.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374101.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374079.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023424.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374164.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023426.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023431.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023449.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023450.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023451.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023452.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023453.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023460.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023468.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374163.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023484.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023493.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374023.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023506.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023507.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023508.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023518.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374019.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374117.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023521.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023522.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023523.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023524.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374108.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374091.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023535.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023536.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023537.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023538.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023556.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023557.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023558.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023559.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023563.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374057.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374036.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023582.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374073.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023594.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374109.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023615.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023617.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023624.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023627.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023628.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374106.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023640.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023642.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023645.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023646.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023651.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374114.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023664.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023665.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374007.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023686.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023691.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023693.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374122.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023695.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023696.1	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023702.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374130.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023725.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374058.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374077.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023732.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023735.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023736.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023738.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023742.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023744.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374133.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374188.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023755.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023757.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374146.1	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023762.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023765.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023767.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023770.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023772.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023778.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023779.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03023782.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374086.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023786.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023794.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374032.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023809.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374124.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023812.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374111.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374171.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023825.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374172.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023826.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023828.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023830.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023831.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023832.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023840.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023847.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374059.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023858.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374151.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023864.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374087.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023883.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023885.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023887.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374042.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023889.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023892.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374152.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023901.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374084.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023920.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023923.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023924.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023925.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023926.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023928.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023929.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023933.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023935.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023940.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023950.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023952.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374080.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023960.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03023968.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023980.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023987.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023990.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374075.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03023999.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024000.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024006.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024011.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024014.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374121.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024020.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024022.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374085.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024040.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024043.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024049.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024052.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024063.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024064.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374143.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024071.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374098.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024075.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024076.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024083.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024084.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024088.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024092.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024093.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024097.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024106.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024108.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024113.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024124.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024130.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024137.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024138.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374083.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024143.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024151.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024161.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024162.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024183.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024185.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024186.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374132.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024193.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024194.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024201.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024202.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024207.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374128.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374093.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374157.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024224.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024225.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024226.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024227.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024243.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374177.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024246.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024248.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024257.1	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 JH374182.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024261.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024268.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024269.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024274.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024277.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024279.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024284.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024296.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374145.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374131.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024314.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024315.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024316.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024319.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024325.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024326.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024332.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024334.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024336.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024340.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024342.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024343.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024349.1	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 JH374158.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024357.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024358.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024362.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024363.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024364.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024371.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024376.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024377.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024379.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024393.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024400.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024404.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024407.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024411.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024414.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024415.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024422.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024431.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024440.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374142.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024446.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024447.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024452.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024457.1	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024462.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024464.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024467.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024475.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024481.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024486.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024487.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024488.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024489.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024490.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024495.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024501.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024503.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374139.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024507.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024509.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024511.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024513.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024515.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024518.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024522.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024523.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024525.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024528.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024540.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024543.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024547.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024550.1	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024554.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024555.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024556.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024561.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024563.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024565.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024569.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024572.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024575.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024581.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024587.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024589.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024593.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024600.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024607.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024610.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024611.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024618.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024619.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024622.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374141.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374183.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024633.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024634.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024646.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024648.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024650.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024655.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024656.1	1000000
+AAEX03024657.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024659.1	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 JH374147.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024666.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024667.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024672.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024684.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374189.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024686.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024691.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024693.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024694.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024697.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024698.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024699.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024702.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024709.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024711.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024712.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024713.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024718.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024726.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024730.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024735.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024736.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024740.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024741.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03024743.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024745.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024750.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024753.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024754.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024755.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024756.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024759.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024762.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024770.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024772.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024776.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024777.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024782.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024783.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024784.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024789.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374192.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024790.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024791.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024793.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024795.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024796.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024800.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024802.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024803.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024805.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024808.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024811.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024813.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024816.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024819.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024826.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024828.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024829.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024839.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024844.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024850.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024851.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024852.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024853.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024854.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024862.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024867.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024868.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024871.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024879.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024884.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024887.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024892.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024893.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024894.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024897.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024899.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374159.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024905.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024912.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024913.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024917.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024919.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024924.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024925.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024927.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024935.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024936.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024937.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024938.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374175.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024939.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024940.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024941.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024950.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024953.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024954.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024955.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374180.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024958.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024961.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024962.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024963.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024969.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024974.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024975.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024977.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024980.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024981.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03024990.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025000.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025005.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025018.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025020.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025022.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025026.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025027.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025029.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025034.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374165.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025041.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025048.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025053.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025054.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025055.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025059.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025061.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025063.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025065.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374169.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025067.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025076.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025081.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025087.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025092.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025097.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025101.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025102.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374191.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025110.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025114.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025116.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025121.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025125.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025132.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025134.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025136.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025140.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025141.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025142.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025143.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025144.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374174.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025149.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025150.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025151.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025155.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025157.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025158.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025160.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025162.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025165.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 JH374176.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025170.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025172.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025175.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025189.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025190.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025192.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025202.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025203.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025205.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025206.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025207.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025209.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025216.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025217.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025220.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025224.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025226.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025228.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025235.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025240.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025241.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025250.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025251.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025252.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025254.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025256.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025257.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025260.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025263.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025274.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025276.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025280.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025281.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025283.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025285.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025289.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025291.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025292.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025296.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025302.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025303.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025304.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025316.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025320.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025321.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025323.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025324.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025326.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025328.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025329.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025330.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025333.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025335.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025337.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025343.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025344.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025347.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025353.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025355.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025356.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025358.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025359.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025360.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025363.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025372.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025377.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025378.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025379.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025382.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025385.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025387.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025394.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025399.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025400.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025401.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025402.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025407.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025411.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025415.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025416.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025420.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025422.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025427.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025433.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025434.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025435.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025440.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025442.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025455.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025463.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025466.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025469.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025471.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025473.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025476.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025478.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025484.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025486.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025489.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025491.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025495.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025496.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025501.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025502.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025505.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025508.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025511.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025513.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025517.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025518.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025522.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025528.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025537.1	1000000
+[smoove] 2023/02/08 17:04:26 JH374193.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025539.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025540.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025541.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025550.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025564.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025566.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025571.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025573.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025577.1	1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025581.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025583.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025584.1	1000000
+AAEX03025586.1	1000000
+AAEX03025597.1	1000000
+AAEX03025598.1	1000000
+AAEX03025600.1	1000000
+AAEX03025601.1	1000000
+AAEX03025604.1	1000000
+AAEX03025610.1	1000000
+AAEX03025612.1	1000000
+AAEX03025622.1	1000000
+AAEX03025627.1	1000000
+AAEX03025628.1	1000000
+AAEX03025630.1	1000000
+AAEX03025631.1	1000000
+AAEX03025636.1	1000000
+AAEX03025637.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025643.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025647.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025648.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025658.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025659.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025660.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025663.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025667.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025677.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025680.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025684.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025686.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025689.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025695.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025702.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025704.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025712.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025715.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025717.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025718.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025720.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025721.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025722.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025724.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025726.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025729.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025730.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025731.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025735.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025736.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025737.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025742.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025743.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025748.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025749.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025751.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025755.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025757.1	1000000
+AAEX03025758.1	1000000
+AAEX03025767.1	1000000
+AAEX03025768.1	1000000
+AAEX03025770.1	1000000
+AAEX03025771.1	1000000
+AAEX03025777.1	1000000
+AAEX03025786.1	1000000
+AAEX03025787.1	1000000
+AAEX03025788.1	1000000
+AAEX03025792.1	1000000
+AAEX03025800.1	1000000
+AAEX03025805.1	1000000
+AAEX03025807.1	1000000
+AAEX03025808.1	1000000
+AAEX03025811.1	1000000
+AAEX03025823.1	1000000
+AAEX03025825.1	1000000
+AAEX03025833.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025835.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025842.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025843.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025848.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025851.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025856.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025864.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025871.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025873.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025876.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025878.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025886.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025890.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025891.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025896.1	1000000
+[smoove] 2023/02/08 17:04:26 AAEX03025902.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025905.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025907.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025909.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025913.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025917.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025921.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025922.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025924.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025925.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025927.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025939.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025947.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025949.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025953.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025956.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025957.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025959.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025964.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025982.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03025995.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026008.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026010.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026013.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026018.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026020.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026046.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026048.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026055.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026063.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:04:26 AAEX03026065.1
+[smoove] 2023/02/08 17:04:26 	
+[smoove] 2023/02/08 17:04:26 1000000
+[smoove] 2023/02/08 17:04:26 
+[smoove] 2023/02/08 17:10:24 wrote sorted, indexed file to out/smoove/results/called/97-G32-12-smoove.genotyped.vcf.gz
+[Wed Feb  8 17:10:24 2023]
 Finished job 0.
 1 of 1 steps (100%) done

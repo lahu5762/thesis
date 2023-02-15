@@ -4,8 +4,12 @@
 /notes
 
 ### too big to push
+smoove_latest.sif
 /data/raw_data/reference/GCF_000002285.3_CanFam3.1_genomic.gff
 /data/bertolotti/**
 !/data/bertolotti/Canis_familiaris.Ngaps.bed
-smoove_latest.sif
-/out/**/*.bam
+/data/smoove/**/*.bam
+/data/minimap/Canis_familiaris.mmi
+/data/minimap/*.sam
+/data/minimap/*.bam
+/out/sniffles/*.bam
