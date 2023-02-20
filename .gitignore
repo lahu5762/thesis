@@ -12,4 +12,4 @@ smoove_latest.sif
 /data/minimap/Canis_familiaris.mmi
 /data/minimap/*.sam
 /data/minimap/*.bam
-/out/sniffles/*.bam
+/data/sniffles/*.bam

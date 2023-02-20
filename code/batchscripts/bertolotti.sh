@@ -22,3 +22,5 @@ mkdir logs/slurm
 snakemake -s code/snakemake/Snakefile --use-singularity --nolock -j 64 \
         --cluster "sbatch -A p2018002 -p {cluster.partition} -n {cluster.n} -t {cluster.time} -J {cluster.name} --parsable -e {cluster.error}.slurm -o {cluster.output}.slurm --mail-user {cluster.email} --mail-type {cluster.mailtype}" \
         --cluster-config code/snakemake/config_snake_cluster.json --cluster-status code/snakemake/snake_status.py
+#NOTE: Using the current config file, jobs for the 'call' step in snakemake will be run on 20 cores to accommodate for wolf 56-D-07-16.
+#       All other jobs can be run successfully on 12 cores or less.

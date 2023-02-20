@@ -1953,3 +1953,7 @@ AAEX03025251.1	1000000
 [smoove] 2023/02/15 13:45:23 AAEX03026063.1	1000000
 [smoove] 2023/02/15 13:45:23 AAEX03026065.1	1000000
 [smoove] 2023/02/15 13:45:23 AAEX03026067.1	1000000
+[smoove] 2023/02/15 14:52:25 wrote sorted, indexed file to out/smoove/results/called/108-D-10-44-smoove.genotyped.vcf.gz
+[Wed Feb 15 14:52:25 2023]
+Finished job 0.
+1 of 1 steps (100%) done
