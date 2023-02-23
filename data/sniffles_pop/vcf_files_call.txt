@@ -1,0 +1,3 @@
+out/sniffles_pop/D-85-01_sorted.vcf
+out/sniffles_pop/D-85-02_sorted.vcf
+out/sniffles_pop/D-92-01_sorted.vcf

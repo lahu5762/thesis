@@ -21,7 +21,8 @@ do
     echo '#!/bin/bash -l 
         module load bioinfo-tools samtools/1.16 minimap2/2.24-r1122;
         minimap2 -a out/minimap/Canis_familiaris.mmi data/raw_data/nanopore/'$wolf'.fastq.gz > out/minimap/'$wolf'.sam;
-        samtools sort -M out/minimap/'$wolf'.sam -o out/minimap/'$wolf'.bam -m 6G -@8 -T $SNIC_TMP/'$wolf'
+        samtools sort -M out/minimap/'$wolf'.sam -o out/minimap/'$wolf'.bam -m 6G -@8 -T $SNIC_TMP/'$wolf';
+        samtools calmd -b out/minimap/'$wolf'.bam data/raw_data/reference/Canis_familiaris.CanFam3.1.dna.toplevel.fa -@8 > out/minimap/'$wolf'_MD.bam
         ' | sbatch -J minimap_sub.$wolf -A p2018002 -t 1-00:00:00 -p core -n 8 \
                     --mail-type 'FAIL' --mail-user lars.huson.5762@student.uu.se -e logs/slurm/minimap.${wolf}.err.slurm -o logs/slurm/minimap.${wolf}.out.slurm
 done

@@ -1,0 +1,3 @@
+out/sniffles_pop/D-85-01_genotyped.vcf
+out/sniffles_pop/D-85-02_genotyped.vcf
+out/sniffles_pop/D-92-01_genotyped.vcf

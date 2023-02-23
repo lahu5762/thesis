@@ -2,6 +2,8 @@
 /out/**
 /.snakemake
 /notes
+/data/problematic/**
+/cache/**
 
 ### too big to push
 smoove_latest.sif
@@ -13,3 +15,7 @@ smoove_latest.sif
 /data/minimap/*.sam
 /data/minimap/*.bam
 /data/sniffles/*.bam
+samplot_v0.1.0.sif
+/data/sniffles_pop/*.bam
+/data/smoove/**
+/logs/slurm/calmd.D-92-01.err.slurm
