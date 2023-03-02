@@ -1,0 +1,2 @@
+set -euo pipefail
+set -euo pipefail; lumpy -msw 4 -mw 4 -t $(mktemp) -tt 0 -P -pe id:W47r,bam_file:out/smoove/results/called//W47r.disc.bam,histo_file:out/smoove/results/called//W47r.histo,mean:396.97,stdev:88.81,read_length:151,min_non_overlap:151,discordant_z:2.75,back_distance:30,weight:1,min_mapping_threshold:20 -sr id:W47r,bam_file:out/smoove/results/called//W47r.split.bam,back_distance:10,weight:1,min_mapping_threshold:20 
