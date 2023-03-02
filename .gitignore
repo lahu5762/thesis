@@ -14,7 +14,7 @@ samplot_v0.1.0.sif
 /data/bertolotti/**
 !/data/bertolotti/Canis_familiaris.Ngaps.bed
 /data/smoove/called/*.bam
-/data/smoove/called/*.vcf.gz
+/data/smoove/called/merged.sites.vcf.gz
 /data/smoove/genotyped/*.vcf.gz
 /data/smoove/annotated/*.vcf*
 /data/minimap/Canis_familiaris.mmi
