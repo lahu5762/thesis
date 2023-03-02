@@ -4,19 +4,25 @@
        "queue":"core",
        "time":"3-00:00:00",
        "partition":"core",
-       "n":1,
-       "name":"{rule}.{wildcards}",
-       "output":"logs/slurm/{rule}.{wildcards}.out",
-       "error":"logs/slurm/{rule}.{wildcards}.err",
+       "n":4,
+       "name":"{rule}",
+       "output":"logs/slurm/{rule}.out",
+       "error":"logs/slurm/{rule}.err",
        "email":"lars.huson.5762@student.uu.se",
        "mailtype":"FAIL"
     },
     "call":{
        "time":"7-0:00:00",
-       "n":20
+       "n":20,
+       "name":"{rule}.{wildcards}",
+       "output":"logs/slurm/{rule}.{wildcards}.out",
+       "error":"logs/slurm/{rule}.{wildcards}.err"
     },
     "genotype":{
        "time":"3-0:00:00",
-       "n":8
+       "n":8,
+       "name":"{rule}.{wildcards}",
+       "output":"logs/slurm/{rule}.{wildcards}.out",
+       "error":"logs/slurm/{rule}.{wildcards}.err"
     }
  }

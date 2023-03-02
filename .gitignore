@@ -12,10 +12,9 @@ smoove_latest.sif
 !/data/bertolotti/Canis_familiaris.Ngaps.bed
 /data/smoove/**/*.bam
 /data/minimap/Canis_familiaris.mmi
-/data/minimap/*.sam
-/data/minimap/*.bam
+/data/minimap/*.?am
 /data/sniffles/*.bam
 samplot_v0.1.0.sif
-/data/sniffles_pop/*.bam
 /data/smoove/**
 /logs/slurm/calmd.D-92-01.err.slurm
+cohort.smoove.square.vcf.gz

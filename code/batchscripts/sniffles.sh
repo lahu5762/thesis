@@ -13,8 +13,8 @@ for wolf in ${wolves[@]};
 do
     echo '#!/bin/bash -l 
         module load bioinfo-tools samtools/1.16 Sniffles/1.0.12-201218-4ff6ecb ;
-        samtools calmd -@20 -bAr data/minimap/'$wolf'.bam data/raw_data/reference/Canis_familiaris.CanFam3.1.dna.toplevel.fa > out/sniffles/'$wolf'.bam ;
-        sniffles -m out/sniffles/'$wolf'.bam -v out/sniffles/'$wolf'.vcf --threads 20 
-        ' | sbatch -J sniffles_sub.$wolf -A p2018002 -t 8-00:00:00 -p core -n 20 \
+        samtools calmd -@8 -b data/minimap/'$wolf'.bam data/raw_data/reference/Canis_familiaris.CanFam3.1.dna.toplevel.fa > out/sniffles/'$wolf'.bam ;
+        sniffles -m out/sniffles/'$wolf'.bam -v out/sniffles/'$wolf'.vcf --threads 8 
+        ' | sbatch -J sniffles_sub.$wolf -A p2018002 -t 5-00:00:00 -p core -n 8 \
                     --mail-type 'FAIL' --mail-user lars.huson.5762@student.uu.se -e logs/slurm/sniffles.${wolf}.err.slurm -o logs/slurm/sniffles.${wolf}.out.slurm
 done
