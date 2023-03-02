@@ -1,0 +1,66 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf data/smoove/annotated/cohort.smoove.square.anno.vcf.gz
+	--chr 1
+	--chr 10
+	--chr 11
+	--chr 12
+	--chr 13
+	--chr 14
+	--chr 15
+	--chr 16
+	--chr 17
+	--chr 18
+	--chr 19
+	--chr 2
+	--chr 20
+	--chr 21
+	--chr 22
+	--chr 23
+	--chr 24
+	--chr 25
+	--chr 26
+	--chr 27
+	--chr 28
+	--chr 29
+	--chr 3
+	--chr 30
+	--chr 31
+	--chr 32
+	--chr 33
+	--chr 34
+	--chr 35
+	--chr 36
+	--chr 37
+	--chr 38
+	--chr 4
+	--chr 5
+	--chr 6
+	--chr 7
+	--chr 8
+	--chr 9
+	--recode-INFO-all
+	--out data/smoove/annotated/cohort.smoove.square.anno.filtered
+	--recode
+
+Using zlib version: 1.2.11
+Warning: Expected at least 2 parts in INFO entry: ID=STRANDS,Number=.,Type=String,Description="Strand orientation of the adjacency in BEDPE format (DEL:+-, DUP:-+, INV:++/--)">
+Warning: Expected at least 2 parts in INFO entry: ID=STRANDS,Number=.,Type=String,Description="Strand orientation of the adjacency in BEDPE format (DEL:+-, DUP:-+, INV:++/--)">
+Warning: Expected at least 2 parts in INFO entry: ID=smoove_gene,Number=.,Type=String,Description="genes overlapping variants. format is gene|feature:nfeatures:nbases,...">
+Warning: Expected at least 2 parts in FORMAT entry: ID=AB,Number=A,Type=Float,Description="Allele balance, fraction of observations from alternate allele, QA/(QR+QA)">
+Warning: Expected at least 2 parts in FORMAT entry: ID=AB,Number=A,Type=Float,Description="Allele balance, fraction of observations from alternate allele, QA/(QR+QA)">
+Warning: Expected at least 2 parts in FORMAT entry: ID=AO,Number=A,Type=Integer,Description="Alternate allele observations, with partial observations recorded fractionally">
+Warning: Expected at least 2 parts in FORMAT entry: ID=AP,Number=A,Type=Integer,Description="Alternate allele paired-end observation count, with partial observations recorded fractionally">
+Warning: Expected at least 2 parts in FORMAT entry: ID=AS,Number=A,Type=Integer,Description="Alternate allele split-read observation count, with partial observations recorded fractionally">
+Warning: Expected at least 2 parts in FORMAT entry: ID=ASC,Number=A,Type=Integer,Description="Alternate allele clipped-read observation count, with partial observations recorded fractionally">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+Warning: Expected at least 2 parts in FORMAT entry: ID=RO,Number=1,Type=Integer,Description="Reference allele observation count, with partial observations recorded fractionally">
+Warning: Expected at least 2 parts in FORMAT entry: ID=RP,Number=1,Type=Integer,Description="Reference allele paired-end observation count, with partial observations recorded fractionally">
+Warning: Expected at least 2 parts in FORMAT entry: ID=RS,Number=1,Type=Integer,Description="Reference allele split-read observation count, with partial observations recorded fractionally">
+After filtering, kept 212 out of 212 Individuals
+Outputting VCF file...
+After filtering, kept 154090 out of a possible 167664 Sites
+Run Time = 499.00 seconds

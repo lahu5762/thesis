@@ -6,15 +6,19 @@
 /cache/**
 
 ### too big to push
+
 smoove_latest.sif
+samplot_v0.1.0.sif
+
 /data/raw_data/reference/GCF_000002285.3_CanFam3.1_genomic.gff
 /data/bertolotti/**
 !/data/bertolotti/Canis_familiaris.Ngaps.bed
-/data/smoove/**/*.bam
+/data/smoove/called/*.bam
+/data/smoove/called/*.vcf.gz
+/data/smoove/genotyped/*.vcf.gz
+/data/smoove/annotated/*.vcf*
 /data/minimap/Canis_familiaris.mmi
 /data/minimap/*.?am
 /data/sniffles/*.bam
-samplot_v0.1.0.sif
-/data/smoove/**
+
 /logs/slurm/calmd.D-92-01.err.slurm
-cohort.smoove.square.vcf.gz
