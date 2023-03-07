@@ -78,7 +78,7 @@ for sv in vcf:
                     + '_'.join([str(x) for x in sample_idxs]) \
                     + '.png'
 
-        print('samplot plot' \
+        print('samplot plot -r data/raw_data/reference/Canis_familiaris.CanFam3.1.dna.toplevel.fa' \
               + ' -n ' + ' '.join(rand_refs + rand_hets + rand_alts) \
               + ' -b ' + ' '.join(bam_paths) \
               + ' -o ' + 'imgs_DUPs/'+ file_name \

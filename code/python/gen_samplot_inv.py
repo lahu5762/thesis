@@ -58,10 +58,10 @@ for sv in vcf:
 
     
 
-    if len(gts.REF) >= 3 and len(gts.HET) >= 3 and len(gts.ALT) >= 3: 
-        rand_refs = random.sample(gts.REF, k=3)
-        rand_hets = random.sample(gts.HET, k=3)
-        rand_alts = random.sample(gts.ALT, k=3)
+    if len(gts.REF) >= 2 and len(gts.HET) >= 2 and len(gts.ALT) >= 2: 
+        rand_refs = random.sample(gts.REF, k=2)
+        rand_hets = random.sample(gts.HET, k=2)
+        rand_alts = random.sample(gts.ALT, k=2)
 
         sample_idxs = []
         for s in rand_refs + rand_hets + rand_alts:
@@ -78,7 +78,7 @@ for sv in vcf:
                     + '_'.join([str(x) for x in sample_idxs]) \
                     + '.png'
 
-        print('samplot plot' \
+        print('samplot plot -r data/raw_data/reference/Canis_familiaris.CanFam3.1.dna.toplevel.fa' \
               + ' -n ' + ' '.join(rand_refs + rand_hets + rand_alts) \
               + ' -b ' + ' '.join(bam_paths) \
               + ' -o ' + 'imgs_INVs/'+ file_name \
