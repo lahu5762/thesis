@@ -1,1 +1,0 @@
-##bcftools_annotateCommand=annotate -x INFO/PRPOS,INFO/PREND -Oz -o out/smoove/results/genotyped/100-G47-11.joint-smoove.genotyped.vcf.gz; Date=Mon Feb 27 13:05:05 2023
