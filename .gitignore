@@ -22,4 +22,8 @@ samplot_v0.1.0.sif
 /imgs_INVs.tar.gz
 /plcr_DUP.tar.gz
 /plcr_INV.tar.gz
+/imgs_DUPs_rerun.tar.gz
+/imgs_INVs_rerun.tar.gz
+/plcr_DUP_rerun.tar.gz
+/plcr_INV_rerun.tar.gz
 /logs/slurm/calmd.D-92-01.err.slurm
