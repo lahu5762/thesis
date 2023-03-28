@@ -1,0 +1,25 @@
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)
+Options in effect:
+  --autosome-num 38
+  --out data/plink/pca_inv
+  --pca 10
+  --threads 4
+  --vcf data/plotcritic/cohort.anno.filtered.curated.inv.vcf
+
+Hostname: r330.uppmax.uu.se
+Working directory: /crex/proj/sllstore2017034/nobackup/work/lars/thesis
+Start time: Tue Mar 28 13:20:05 2023
+
+Random number seed: 1680002406
+128373 MiB RAM detected; reserving 64186 MiB for main workspace.
+Using up to 4 compute threads.
+--vcf: 146 variants scanned.
+--vcf: data/plink/pca_inv-temporary.pgen +
+data/plink/pca_inv-temporary.pvar.zst + data/plink/pca_inv-temporary.psam
+written.
+212 samples (0 females, 0 males, 212 ambiguous; 212 founders) loaded from
+data/plink/pca_inv-temporary.psam.
+Error: data/plink/pca_inv-temporary.pvar.zst has a split chromosome. Use
+--make-pgen + --sort-vars to remedy this.
+
+End time: Tue Mar 28 13:20:06 2023

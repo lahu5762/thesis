@@ -1,0 +1,28 @@
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)
+Options in effect:
+  --autosome-num 38
+  --make-pgen
+  --out data/plink/inv_plinkfile
+  --sort-vars
+  --vcf data/plotcritic/cohort.anno.filtered.curated.inv.vcf
+
+Hostname: r330.uppmax.uu.se
+Working directory: /crex/proj/sllstore2017034/nobackup/work/lars/thesis
+Start time: Tue Mar 28 13:32:19 2023
+
+Random number seed: 1680003139
+128373 MiB RAM detected; reserving 64186 MiB for main workspace.
+Using up to 4 compute threads.
+--vcf: 146 variants scanned.
+--vcf: data/plink/inv_plinkfile-temporary.pgen +
+data/plink/inv_plinkfile-temporary.pvar.zst +
+data/plink/inv_plinkfile-temporary.psam written.
+212 samples (0 females, 0 males, 212 ambiguous; 212 founders) loaded from
+data/plink/inv_plinkfile-temporary.psam.
+146 variants loaded from data/plink/inv_plinkfile-temporary.pvar.zst.
+Note: No phenotype data present.
+Writing data/plink/inv_plinkfile.pvar ... done.
+Writing data/plink/inv_plinkfile.psam ... done.
+Writing data/plink/inv_plinkfile.pgen ... done.
+
+End time: Tue Mar 28 13:32:19 2023
