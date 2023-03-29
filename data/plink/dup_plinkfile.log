@@ -6,11 +6,11 @@ Options in effect:
   --sort-vars
   --vcf data/plotcritic/cohort.anno.filtered.curated.dup.vcf
 
-Hostname: r330.uppmax.uu.se
+Hostname: r59.uppmax.uu.se
 Working directory: /crex/proj/sllstore2017034/nobackup/work/lars/thesis
-Start time: Tue Mar 28 13:32:46 2023
+Start time: Wed Mar 29 13:37:51 2023
 
-Random number seed: 1680003166
+Random number seed: 1680089871
 128373 MiB RAM detected; reserving 64186 MiB for main workspace.
 Using up to 4 compute threads.
 --vcf: 1040 variants scanned.
@@ -25,4 +25,4 @@ Writing data/plink/dup_plinkfile.pvar ... done.
 Writing data/plink/dup_plinkfile.psam ... done.
 Writing data/plink/dup_plinkfile.pgen ... done.
 
-End time: Tue Mar 28 13:32:46 2023
+End time: Wed Mar 29 13:37:52 2023
