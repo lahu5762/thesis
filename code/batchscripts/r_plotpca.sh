@@ -7,7 +7,9 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user lars.huson.5762@student.uu.se
 
+module load R_packages/4.1.1
+
 for file in `ls data/plink/*pca.eigenvec | grep -o "[a-z]*_[a-z_]*pca"`;
 do
-    R -f code/r/plotpca.R --vanilla "--args eigvec_path='data/plink/$file.eigenvec' prefix='$file' outfolder='figures/'"
+    R -f code/r/plotpca.R --vanilla "--args eigval_path='data/plink/$file.eigenval' eigvec_path='data/plink/$file.eigenvec' prefix='$file' outfolder='figures/'"
 done
