@@ -33,9 +33,17 @@ ggplot(data = pca_df, aes(PC1, PC2)) +
        title = prefix) +
   theme_bw() +
   geom_point(aes(colour = CID)) +
+  scale_colour_manual(values = plotcol)
+ggsave(paste(outfolder, prefix, '_PCA12.png', sep = ''))
+ggplot(data = pca_df, aes(PC1, PC2)) +
+  labs(x = paste('PC1 (', pca_eigenval[1,], ')'),
+       y = paste('PC2 (', pca_eigenval[2,], ')'),
+       title = prefix) +
+  theme_bw() +
+  geom_point(aes(colour = CID)) +
   scale_colour_manual(values = plotcol) +
   geom_text(aes(label = X.IID), nudge_x = .02)
-ggsave(paste(outfolder, prefix, '_PCA12.png', sep = ''))
+ggsave(paste(outfolder, prefix, '_PCA12_wtags.png', sep = ''))
 
 # pcs 3-4
 ggplot(data = pca_df, aes(PC3, PC4)) +
@@ -44,6 +52,14 @@ ggplot(data = pca_df, aes(PC3, PC4)) +
        title = prefix) +
   theme_bw() +
   geom_point(aes(colour = CID)) +
+  scale_colour_manual(values = plotcol)
+ggsave(paste(outfolder, prefix, '_PCA34.png', sep = ''))
+ggplot(data = pca_df, aes(PC3, PC4)) +
+  labs(x = paste('PC3 (', pca_eigenval[3,], ')'),
+       y = paste('PC4 (', pca_eigenval[4,], ')'),
+       title = prefix) +
+  theme_bw() +
+  geom_point(aes(colour = CID)) +
   scale_colour_manual(values = plotcol) +
   geom_text(aes(label = X.IID), nudge_x = .02)
-ggsave(paste(outfolder, prefix, '_PCA34.png', sep = ''))
+ggsave(paste(outfolder, prefix, '_PCA34_wtags.png', sep = ''))
