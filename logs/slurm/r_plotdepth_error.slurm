@@ -1,0 +1,15 @@
+Saving 7 x 7 in image
+`geom_smooth()` using formula 'y ~ x'
+Saving 7 x 7 in image
+`geom_smooth()` using formula 'y ~ x'
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+`geom_smooth()` using formula 'y ~ x'
+Saving 7 x 7 in image
+`geom_smooth()` using formula 'y ~ x'
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+`geom_smooth()` using formula 'y ~ x'
+Saving 7 x 7 in image
+`geom_smooth()` using formula 'y ~ x'
+Saving 7 x 7 in image

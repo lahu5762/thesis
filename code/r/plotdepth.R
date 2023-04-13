@@ -32,6 +32,25 @@ ggplot(data = plot_df, aes(MEAN_DEPTH, V1)) +
        title = prefix) +
   theme_bw() +
   geom_point(aes(colour = CID)) +
+  scale_colour_manual(values = plotcol)
+ggsave(paste(outfolder, prefix, '_depthtocount.png', sep = ''))
+plotcol <- c('blue', 'red', 'yellow')
+ggplot(data = plot_df, aes(MEAN_DEPTH, V1)) +
+  labs(x = 'depth',
+       y = '# of variants',
+       title = prefix) +
+  theme_bw() +
+  geom_point(aes(colour = CID)) +
   scale_colour_manual(values = plotcol) +
   geom_smooth(method = lm)
-ggsave(paste(outfolder, prefix, '_depthtocount.png', sep = ''))
+ggsave(paste(outfolder, prefix, '_depthtocount_wtrendline.png', sep = ''))
+plotcol <- c('blue', 'red', 'yellow')
+ggplot(data = plot_df, aes(MEAN_DEPTH, V1)) +
+  labs(x = 'depth',
+       y = '# of variants',
+       title = prefix) +
+  theme_bw() +
+  geom_point(aes(colour = CID)) +
+  scale_colour_manual(values = plotcol) +
+  geom_text(aes(label = INDV), nudge_x = 5)
+ggsave(paste(outfolder, prefix, '_depthtocount_wlabels.png', sep = ''))
