@@ -6,8 +6,8 @@
 /cache/**
 
 ### too big to push
-smoove_latest.sif
-samplot_v0.1.0.sif
+/smoove_latest.sif
+/samplot_v0.1.0.sif
 /data/raw_data/reference/GCF_000002285.3_CanFam3.1_genomic.gff
 /data/bertolotti/**
 !/data/bertolotti/Canis_familiaris.Ngaps.bed
@@ -29,3 +29,5 @@ samplot_v0.1.0.sif
 /logs/slurm/calmd.D-92-01.err.slurm
 /data/plotcritic/cohort.anno.filtered.curated.del.vcf
 /data/plink/del_*rejects_plinkfile.pvar
+/data/SNPs/100S95F14R.chr1-38.allSNPs.wfm.vcf.gz
+/data/SNPs/plink/SNPs_plinkfile.*

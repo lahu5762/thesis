@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH -A p2018002
 #SBATCH -p core -n 1
-#SBATCH -t 5-00:00:00
+#SBATCH -t 0-06:00:00
 #SBATCH -J plcr_parse 
 #SBATCH -o plcr_parse.out.slurm -e plcr_parse.error.slurm
-#SBATCH --mail-type=END
+#SBATCH --mail-type=ALL
 #SBATCH --mail-user lars.huson.5762@student.uu.se
 
 # open env (for plotcritic command)

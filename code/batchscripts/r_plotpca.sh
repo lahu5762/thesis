@@ -4,7 +4,7 @@
 #SBATCH -t 0-00:30:00
 #SBATCH -J r_plotpca 
 #SBATCH -o r_plotpca_out.slurm -e r_plotpca_error.slurm
-#SBATCH --mail-type=END
+#SBATCH --mail-type=ALL
 #SBATCH --mail-user lars.huson.5762@student.uu.se
 
 module load R_packages/4.1.1

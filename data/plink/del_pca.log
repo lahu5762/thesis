@@ -6,12 +6,12 @@ Options in effect:
   --pfile data/plink/del_plinkfile
   --threads 4
 
-Hostname: r133.uppmax.uu.se
+Hostname: r1228.uppmax.uu.se
 Working directory: /crex/proj/sllstore2017034/nobackup/work/lars/thesis
-Start time: Mon Apr  3 15:41:45 2023
+Start time: Fri Apr 14 14:10:25 2023
 
-Random number seed: 1680529305
-128373 MiB RAM detected; reserving 64186 MiB for main workspace.
+Random number seed: 1681474225
+257675 MiB RAM detected; reserving 128837 MiB for main workspace.
 Using up to 4 compute threads.
 212 samples (0 females, 0 males, 212 ambiguous; 212 founders) loaded from
 data/plink/del_plinkfile.psam.
@@ -24,4 +24,4 @@ Extracting eigenvalues and eigenvectors... done.
 --pca: Eigenvectors written to data/plink/del_pca.eigenvec , and eigenvalues
 written to data/plink/del_pca.eigenval .
 
-End time: Mon Apr  3 15:41:45 2023
+End time: Fri Apr 14 14:10:25 2023

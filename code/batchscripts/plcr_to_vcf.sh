@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH -A p2018002
 #SBATCH -p core -n 1
-#SBATCH -t 5-00:00:00
+#SBATCH -t 1-00:00:00
 #SBATCH -J plcr_to_vcf 
 #SBATCH -o plcr_to_vcf.out.slurm -e plcr_to_vcf.error.slurm
-#SBATCH --mail-type=END
+#SBATCH --mail-type=ALL
 #SBATCH --mail-user lars.huson.5762@student.uu.se
 
 # create inv, dup and del vcf files

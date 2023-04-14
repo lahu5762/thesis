@@ -4,7 +4,7 @@
 #SBATCH -t 1-00:00:00
 #SBATCH -J plink 
 #SBATCH -o plink_out.slurm -e plink_error.slurm
-#SBATCH --mail-type=END
+#SBATCH --mail-type=ALL
 #SBATCH --mail-user lars.huson.5762@student.uu.se
 
 module load bioinfo-tools plink2/2.00-alpha-3.7-20221024
@@ -17,17 +17,17 @@ do # create pca's
     plink2 --pfile data/plink/${type}_plinkfile --autosome-num 38 --pca 10 --threads 4 --out data/plink/${type}_pca
     # plotcritic rejects
     if [[ $type != del ]]; then
-        plink2 --vcf data/plotcritic/cohort.plotcritic_rejects.${type}.vcf --autosome-num 38 --make-pgen --sort-vars --out data/plink/${type}_plcr_rejects_plinkfile
-        plink2 --pfile data/plink/${type}_plcr_rejects_plinkfile --autosome-num 38 --pca 10 --threads 4 --out data/plink/${type}_plcr_reject_pca
+        plink2 --vcf data/plotcritic/cohort.plotcritic_rejects.${type}.vcf --autosome-num 38 --make-pgen --sort-vars --out data/plink/${type}_plcr_curation_rejects_plinkfile
+        plink2 --pfile data/plink/${type}_plcr_curation_rejects_plinkfile --autosome-num 38 --pca 10 --threads 4 --out data/plink/${type}_plcr_curation_reject_pca
     fi
-    plink2 --vcf data/smoove/annotated/cohort.isolated_plcr_freq_rejects.${type}.vcf --autosome-num 38 --make-pgen --sort-vars --out data/plink/${type}_iso_plcr_freq_rejects_plinkfile
-    plink2 --pfile data/plink/${type}_iso_plcr_freq_rejects_plinkfile --autosome-num 38 --pca 10 --threads 4 --out data/plink/${type}_iso_plcr_freq_reject_pca
+    plink2 --vcf data/smoove/annotated/cohort.plcr_freq_rejects.${type}.vcf --autosome-num 38 --make-pgen --sort-vars --out data/plink/${type}_plcr_freq_rejects_plinkfile
+    plink2 --pfile data/plink/${type}_plcr_freq_rejects_plinkfile --autosome-num 38 --pca 10 --threads 4 --out data/plink/${type}_plcr_freq_reject_pca
     # duphold rejects
     if [[ $type != inv ]]; then
+        plink2 --vcf data/smoove/annotated/cohort.plcr_rejects.${type}.vcf --autosome-num 38 --make-pgen --sort-vars --out data/plink/${type}_plcr_rejects_plinkfile
+        plink2 --pfile data/plink/${type}_plcr_rejects_plinkfile --autosome-num 38 --pca 10 --threads 4 --out data/plink/${type}_plcr_reject_pca
         plink2 --vcf data/smoove/annotated/cohort.duphold_rejects.${type}.vcf --autosome-num 38 --make-pgen --sort-vars --out data/plink/${type}_duph_rejects_plinkfile
         plink2 --pfile data/plink/${type}_duph_rejects_plinkfile --autosome-num 38 --pca 10 --threads 4 --out data/plink/${type}_duph_reject_pca
-        plink2 --vcf data/smoove/annotated/cohort.isolated_duphold_rejects.${type}.vcf --autosome-num 38 --make-pgen --sort-vars --out data/plink/${type}_iso_duph_rejects_plinkfile
-        plink2 --pfile data/plink/${type}_iso_duph_rejects_plinkfile --autosome-num 38 --pca 10 --threads 4 --out data/plink/${type}_iso_duph_reject_pca
     fi    
     # all rejects
     plink2 --vcf data/smoove/annotated/cohort.rejects.${type}.vcf --autosome-num 38 --make-pgen --sort-vars --out data/plink/${type}_rejects_plinkfile

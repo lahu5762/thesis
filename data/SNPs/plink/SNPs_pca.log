@@ -1,0 +1,27 @@
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)
+Options in effect:
+  --autosome-num 38
+  --out data/SNPs/plink/SNPs_pca
+  --pca 10
+  --pfile data/SNPs/plink/SNPs_plinkfile
+  --threads 4
+
+Hostname: r1003.uppmax.uu.se
+Working directory: /crex/proj/sllstore2017034/nobackup/work/lars/thesis
+Start time: Thu Apr 13 17:39:03 2023
+
+Random number seed: 1681400343
+257675 MiB RAM detected; reserving 128837 MiB for main workspace.
+Using up to 4 compute threads.
+211 samples (0 females, 0 males, 211 ambiguous; 211 founders) loaded from
+data/SNPs/plink/SNPs_plinkfile.psam.
+8313538 variants loaded from data/SNPs/plink/SNPs_plinkfile.pvar.
+Note: No phenotype data present.
+Calculating allele frequencies... done.
+Constructing GRM: done.
+Correcting for missingness... done.
+Extracting eigenvalues and eigenvectors... done.
+--pca: Eigenvectors written to data/SNPs/plink/SNPs_pca.eigenvec , and
+eigenvalues written to data/SNPs/plink/SNPs_pca.eigenval .
+
+End time: Thu Apr 13 17:39:15 2023

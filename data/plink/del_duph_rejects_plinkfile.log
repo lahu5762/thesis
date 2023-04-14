@@ -6,24 +6,24 @@ Options in effect:
   --sort-vars
   --vcf data/smoove/annotated/cohort.duphold_rejects.del.vcf
 
-Hostname: r133.uppmax.uu.se
+Hostname: r1228.uppmax.uu.se
 Working directory: /crex/proj/sllstore2017034/nobackup/work/lars/thesis
-Start time: Mon Apr  3 15:41:48 2023
+Start time: Fri Apr 14 14:10:30 2023
 
-Random number seed: 1680529308
-128373 MiB RAM detected; reserving 64186 MiB for main workspace.
+Random number seed: 1681474230
+257675 MiB RAM detected; reserving 128837 MiB for main workspace.
 Using up to 4 compute threads.
---vcf: 28261 variants scanned.
+--vcf: 1185 variants scanned.
 --vcf: data/plink/del_duph_rejects_plinkfile-temporary.pgen +
 data/plink/del_duph_rejects_plinkfile-temporary.pvar.zst +
 data/plink/del_duph_rejects_plinkfile-temporary.psam written.
 212 samples (0 females, 0 males, 212 ambiguous; 212 founders) loaded from
 data/plink/del_duph_rejects_plinkfile-temporary.psam.
-28261 variants loaded from
+1185 variants loaded from
 data/plink/del_duph_rejects_plinkfile-temporary.pvar.zst.
 Note: No phenotype data present.
 Writing data/plink/del_duph_rejects_plinkfile.pvar ... done.
 Writing data/plink/del_duph_rejects_plinkfile.psam ... done.
 Writing data/plink/del_duph_rejects_plinkfile.pgen ... done.
 
-End time: Mon Apr  3 15:41:50 2023
+End time: Fri Apr 14 14:10:31 2023
