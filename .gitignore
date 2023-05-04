@@ -34,3 +34,4 @@
 /data/SNPs/subset_*.allSNPs.vcf
 /data/SNPs/plink/SNPs_plinkfile.*
 /data/SNPs/plink/SNPs_subset_*_plinkfile.*
+/data/trios/cohort.curated.trio.*.del.vcf
