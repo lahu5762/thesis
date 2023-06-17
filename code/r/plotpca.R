@@ -36,6 +36,9 @@ ggplot(data = pca_df, aes(PC1, PC2)) +
        y = paste('PC2 (', round((pca_eigval[2,]/sum(pca_eigval))*100, 2), '%)'),
        title = prefix) +
   theme_bw() +
+  theme(legend.position = 'bottom', 
+        axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
+        axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
   scale_colour_manual(values = plotcol) +
   scale_fill_manual(values = plotfil) +
@@ -46,6 +49,9 @@ ggplot(data = pca_df, aes(PC1, PC2)) +
        y = paste('PC2 (', round((pca_eigval[2,]/sum(pca_eigval))*100, 2), '%)'),
        title = prefix) +
   theme_bw() +
+  theme(legend.position = 'bottom',
+        axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
+        axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
   scale_colour_manual(values = plotcol) +
   scale_fill_manual(values = plotfil) +
@@ -59,6 +65,9 @@ ggplot(data = pca_df, aes(PC3, PC4)) +
        y = paste('PC4 (', round((pca_eigval[3,]/sum(pca_eigval))*100, 2), '%)'),
        title = prefix) +
   theme_bw() +
+  theme(legend.position = 'bottom',
+        axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
+        axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
   scale_colour_manual(values = plotcol) +
   scale_fill_manual(values = plotfil) +
@@ -69,6 +78,9 @@ ggplot(data = pca_df, aes(PC3, PC4)) +
        y = paste('PC4 (', round((pca_eigval[4,]/sum(pca_eigval))*100, 2), '%)'),
        title = prefix) +
   theme_bw() +
+  theme(legend.position = 'bottom',
+        axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
+        axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
   scale_colour_manual(values = plotcol) +
   scale_fill_manual(values = plotfil) +

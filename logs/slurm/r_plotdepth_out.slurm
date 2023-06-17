@@ -54,6 +54,9 @@ Type 'q()' to quit R.
 +        y = '# of variants',
 +        title = prefix) +
 +   theme_bw() +
++   theme(legend.position = 'bottom', 
++         axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
++         axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
 +   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
 +   scale_colour_manual(values = plotcol) +
 +   scale_fill_manual(values = plotfil) +
@@ -65,6 +68,9 @@ Type 'q()' to quit R.
 +        y = '# of variants',
 +        title = prefix) +
 +   theme_bw() +
++   theme(legend.position = 'bottom', 
++         axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
++         axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
 +   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
 +   scale_colour_manual(values = plotcol) +
 +   scale_fill_manual(values = plotfil) +
@@ -77,6 +83,9 @@ Type 'q()' to quit R.
 +        y = '# of variants',
 +        title = prefix) +
 +   theme_bw() +
++   theme(legend.position = 'bottom', 
++         axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
++         axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
 +   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
 +   scale_colour_manual(values = plotcol) +
 +   scale_fill_manual(values = plotfil) +
@@ -140,6 +149,9 @@ Type 'q()' to quit R.
 +        y = '# of variants',
 +        title = prefix) +
 +   theme_bw() +
++   theme(legend.position = 'bottom', 
++         axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
++         axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
 +   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
 +   scale_colour_manual(values = plotcol) +
 +   scale_fill_manual(values = plotfil) +
@@ -151,6 +163,9 @@ Type 'q()' to quit R.
 +        y = '# of variants',
 +        title = prefix) +
 +   theme_bw() +
++   theme(legend.position = 'bottom', 
++         axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
++         axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
 +   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
 +   scale_colour_manual(values = plotcol) +
 +   scale_fill_manual(values = plotfil) +
@@ -163,6 +178,9 @@ Type 'q()' to quit R.
 +        y = '# of variants',
 +        title = prefix) +
 +   theme_bw() +
++   theme(legend.position = 'bottom', 
++         axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
++         axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
 +   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
 +   scale_colour_manual(values = plotcol) +
 +   scale_fill_manual(values = plotfil) +
@@ -226,6 +244,9 @@ Type 'q()' to quit R.
 +        y = '# of variants',
 +        title = prefix) +
 +   theme_bw() +
++   theme(legend.position = 'bottom', 
++         axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
++         axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
 +   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
 +   scale_colour_manual(values = plotcol) +
 +   scale_fill_manual(values = plotfil) +
@@ -237,6 +258,9 @@ Type 'q()' to quit R.
 +        y = '# of variants',
 +        title = prefix) +
 +   theme_bw() +
++   theme(legend.position = 'bottom', 
++         axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
++         axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
 +   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
 +   scale_colour_manual(values = plotcol) +
 +   scale_fill_manual(values = plotfil) +
@@ -249,6 +273,9 @@ Type 'q()' to quit R.
 +        y = '# of variants',
 +        title = prefix) +
 +   theme_bw() +
++   theme(legend.position = 'bottom', 
++         axis.text.x = element_text(size=20), axis.text.y = element_text(size=20),
++         axis.title.x = element_text(size=24), axis.title.y = element_text(size=24)) +
 +   geom_point(aes(colour = Population, shape = Population, fill = Population)) +
 +   scale_colour_manual(values = plotcol) +
 +   scale_fill_manual(values = plotfil) +

@@ -10,7 +10,7 @@
 module load R_packages/4.1.1
 
 # SVs
-for file in `ls data/plink/*pca.eigenvec | grep -o "[a-z]*_[a-z_]*pca"`;
+for file in `ls data/plink/*pca.eigenvec | grep -o "[a-z]*_[a-z50_]*pca"`;
 do
     R -f code/r/plotpca.R --vanilla "--args eigval_path='data/plink/$file.eigenval' eigvec_path='data/plink/$file.eigenvec' prefix='$file' outfolder='figures/pca/'"
 done

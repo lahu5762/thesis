@@ -27,8 +27,8 @@
 /plcr_DUP_rerun.tar.gz
 /plcr_INV_rerun.tar.gz
 /logs/slurm/calmd.D-92-01.err.slurm
-/data/plotcritic/cohort.anno.filtered.curated.del.vcf
-/data/plotcritic/cohort.curated.del.subset_*.vcf
+/data/plotcritic/cohort.anno.filtered.curated.del*.vcf
+/data/plotcritic/cohort.curated.del*.subset_*.vcf
 /data/plink/del_*rejects_plinkfile.pvar
 /data/SNPs/100S95F14R.chr1-38.allSNPs.wfm.vcf.gz
 /data/SNPs/subset_*.allSNPs.vcf

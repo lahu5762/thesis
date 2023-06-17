@@ -1,0 +1,27 @@
+PLINK v2.00a3.7LM AVX2 Intel (24 Oct 2022)
+Options in effect:
+  --autosome-num 38
+  --out data/plink/dup_50_subset_fi_pca
+  --pca 10
+  --pfile data/plink/dup_50_subset_fi_plinkfile
+  --threads 4
+
+Hostname: r246.uppmax.uu.se
+Working directory: /crex/proj/sllstore2017034/nobackup/work/lars/thesis
+Start time: Tue May 23 13:30:31 2023
+
+Random number seed: 1684841431
+128373 MiB RAM detected; reserving 64186 MiB for main workspace.
+Using up to 4 compute threads.
+101 samples (0 females, 0 males, 101 ambiguous; 101 founders) loaded from
+data/plink/dup_50_subset_fi_plinkfile.psam.
+1040 variants loaded from data/plink/dup_50_subset_fi_plinkfile.pvar.
+Note: No phenotype data present.
+Calculating allele frequencies... done.
+Constructing GRM: done.
+Correcting for missingness... done.
+Extracting eigenvalues and eigenvectors... done.
+--pca: Eigenvectors written to data/plink/dup_50_subset_fi_pca.eigenvec , and
+eigenvalues written to data/plink/dup_50_subset_fi_pca.eigenval .
+
+End time: Tue May 23 13:30:31 2023

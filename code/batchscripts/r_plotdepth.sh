@@ -9,8 +9,8 @@
 
 module load R_packages/4.1.1
 
-for file in `ls sample.counts.*`;
+for file in `ls data/plotcritic/sample.counts.*`;
 do
-    FILENAME=`echo $file | sed s/sample.counts.//`
+    FILENAME=`echo $file | sed s/.*sample.counts.//`
     R -f code/r/plotdepth.R --vanilla "--args depthfile='wolves.idepth' countfile='$file' prefix='$FILENAME' outfolder='figures/'"
 done
