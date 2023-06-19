@@ -45,3 +45,18 @@ All data and rights to the data belong to Uppsala University.
     - All SNPs from Smeds study
 - data/SNPs/subset_{fi|se}.allSNPs.vcf
     - Subset of individuals from different sequencing batches
+### Other
+- CHR_len
+    - Length of each of the wolf chromosomes in base-pairs
+- code/batchscripts/*
+    - All scripts used during the project
+- figures/*
+    - All the plots and figures generated during the project
+- metadata.txt
+    - List of samples, as well as information about each sample
+- notes
+    - A collection of commands and notes that were used during the project
+- scand_wolf_family_tree.pdf
+    - A family tree of the Scandinavian wolf population 1983-2015 created by Agnese Viluma
+- wolves.idepth
+    - Coverage of each sample
