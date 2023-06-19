@@ -1,5 +1,5 @@
 This directory contains the scripts and data for
-Huson, L.S.A. (2023) Discovering structural variants in the DNA of the Scandinavian wolf
+"Huson, L.S.A. (2023) Discovering structural variants in the DNA of the Scandinavian wolf"
 
 All data and rights to the data belong to Uppsala University.
 
