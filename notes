@@ -1,0 +1,147 @@
+#### NOTES
+# A collection of commands and notes used during the project
+# Most will be counts and summaries
+
+
+### Avoid git push errors
+# find * -size +100M | cat >> .gitignore
+
+# zcat data/smoove/*.vcf.gz | perl -ne 'print "$1\n" if /[;\t]SVTYPE=([^;\t]+)/' | sort | uniq -c
+# 1321110 BND
+# 5989099 DEL
+#  202079 DUP
+#   46269 INV
+
+### redo index
+# for file in out/smoove/results/genotyped/*.vcf.gz;
+# do
+#   bcftools index -f --threads 4 $file;
+# done
+
+### short-read SV summary (pre-curation, pre-filter)
+# SURVIVOR stats data/smoove/annotated/cohort.anno.filtered.GT.vcf -1 -1 -1 data/smoove/summary
+# Tot     DEL     DUP     INS     INV     TRA
+# 153866  62706   7400    0       26909   56851 
+# see output files for elaboration
+
+##### PLOTCRITIC #####
+
+### zip
+# tar -czf imgs_INVs.tar.gz imgs_INVs 
+# tar -czf imgs_DUPs.tar.gz imgs_DUPs 
+# tar -czf plcr_INV.tar.gz plcr_INV 
+# tar -czf plcr_DUP.tar.gz plcr_DUP 
+## unzip
+# tar -xf imgs_INVs.tar.gz imgs_INVs 
+# tar -xf imgs_DUPs.tar.gz imgs_DUPs 
+# tar -xf plcr_INV.tar.gz plcr_INV 
+# tar -xf plcr_DUP.tar.gz plcr_DUP 
+
+# cat plcr_report/plcr_DUP_complete_report.tsv | grep 'Lars' | cut -f3 | grep 'c' | wc
+# cat plcr_report/plcr_DUP_complete_report.tsv | grep 'Linnéa' | cut -f3 | grep 'c' | wc
+## DUP scored NO:
+# Lars: 2618    Linnéa: 2032
+# cat plcr_report/plcr_INV_complete_report.tsv | grep 'Lars' | cut -f3 | grep 'c' | wc
+# cat plcr_report/plcr_INV_complete_report.tsv | grep 'Linnéa' | cut -f3 | grep 'c' | wc
+## INV scored NO:
+# Lars: 430 Linnéa: 370
+# nr of agreements (pos IDs) (100/0/0 or 50/50/0)
+# INV: 103  DUP: 595
+## After re-evaluation:
+# 1040 DUPs and 146 INVs (33212 DELs)
+
+##### PLINK #####
+
+# plink2 --vcf data/plotcritic/cohort.anno.filtered.curated.inv.vcf --autosome-num 38 --make-pgen --sort-vars --out data/plink/inv_plinkfile
+# plink2 --pfile data/plink/inv_plinkfile --autosome-num 38 --pca 10 --threads 4 --out data/plink/inv_pca
+
+### create reject vcfs
+# cat data/plotcritic/plcr_INV_summary_report.tsv | grep $'0.0\t0.0\t100.0' > data/plotcritic/INV_reject
+# cat data/plotcritic/plcr_INV_rerun_summary_report.tsv | grep $'0.0\t0.0\t100.0' >> data/plotcritic/INV_reject
+#
+# bcftools view -h data/smoove/annotated/cohort.anno.filtered.inv.vcf > data/plotcritic/cohort.rejects.inv.vcf
+# while read -r plcr_line;
+# do
+#     IFS=' ' read -ra fields <<< $plcr_line
+#     bcftools view -H data/smoove/annotated/cohort.anno.filtered.inv.vcf | grep -E $"^${fields[1]}\s$((fields[2]+1)).+SVTYPE=${fields[4]};.+END=${fields[3]}" >> data/plotcritic/cohort.rejects.inv.vcf
+# done < data/plotcritic/INV_reject
+#
+### post-duphold filter
+# bcftools view -T ^data/plotcritic/cohort.anno.filtered.curated.del.vcf data/smoove/annotated/cohort.anno.filtered.del.vcf > data/smoove/annotated/cohort.plcr_rejects.del.vcf
+# bcftools view -T ^data/plotcritic/cohort.anno.filtered.curated.dup.vcf data/smoove/annotated/cohort.anno.filtered.dup.vcf > data/smoove/annotated/cohort.plcr_rejects.dup.vcf
+#
+### pre-filters
+# bcftools view -i 'SVTYPE="DEL" & (GT="0/1" || GT="1/1")' -f '%CHROM\t%POS\t%INFO/END[\t%GT]\n' data/smoove/annotated/cohort.anno.filtered.GT.vcf > data/smoove/annotated/cohort.anno.nofilter.del.vcf
+# bcftools view -T ^data/plotcritic/cohort.anno.filtered.curated.del.vcf data/smoove/annotated/cohort.anno.nofilter.del.vcf > data/smoove/annotated/cohort.rejects.del.vcf
+# bcftools view -i 'SVTYPE="DUP" & (GT="0/1" || GT="1/1")' -f '%CHROM\t%POS\t%INFO/END[\t%GT]\n' data/smoove/annotated/cohort.anno.filtered.GT.vcf > data/smoove/annotated/cohort.anno.nofilter.dup.vcf
+# bcftools view -T ^data/plotcritic/cohort.anno.filtered.curated.dup.vcf data/smoove/annotated/cohort.anno.nofilter.dup.vcf > data/smoove/annotated/cohort.rejects.dup.vcf
+# bcftools view -T ^data/plotcritic/cohort.anno.filtered.curated.inv.vcf data/smoove/annotated/cohort.anno.filtered.inv.vcf > data/smoove/annotated/cohort.rejects.inv.vcf
+#
+### isolated steps
+# bcftools view -T ^data/smoove/annotated/cohort.anno.filtered.del.vcf data/smoove/annotated.rejects.del.vcf > data/smoove/annotated/cohort.duphold_rejects.del.vcf
+# bcftools view -T ^data/smoove/annotated/cohort.anno.filtered.dup.vcf data/smoove/annotated.rejects.dup.vcf > data/smoove/annotated/cohort.duphold_rejects.dup.vcf
+# bcftools view -T ^data/plotcritic/cohort.anno.filtered.curated.del.vcf data/smoove/annotated/cohort.anno.filtered.del.vcf > data/smoove/annotated/cohort.plcr_freq_rejects.del.vcf
+# bcftools view -T ^data/plotcritic/cohort.plotcritic_rejects.dup.vcf data/smoove/annotated/cohort.duphold_rejects.dup.vcf > data/smoove/annotated/cohort.plcr_freq_rejects.dup.vcf
+# bcftools view -T ^data/plotcritic/cohort.plotcritic_rejects.inv.vcf data/smoove/annotated/cohort.rejects.inv.vcf > data/smoove/annotated/cohort.plcr_freq_rejects.inv.vcf
+
+##### POPULATION ANALYSIS #####
+
+# head -n 1 103Scand.98Finnish.26Russian.3Hybrid.108NCBI.vcf.idepth > wolves.idepth
+# while read -r line;
+# do
+#     WLFNAME=`echo $line | cut -f 1 -d " "`
+#     grep -wF $WLFNAME 103Scand.98Finnish.26Russian.3Hybrid.108NCBI.vcf.idepth >> wolves.idepth
+# done < cramfiles.txt
+
+### count variants per individual
+# bcftools query -i'GT="alt"' -f'[%SAMPLE %GT \n]' data/plotcritic/cohort.anno.filtered.curated.inv.vcf | awk '{print $1}' | sort | uniq -c >  data/plotcritic/sample.counts.inv
+### Total variant count
+# SURVIVOR stats data/plotcritic/cohort.anno.filtered.curated.del.vcf -1 -1 -1 data/plotcritic/stats.del
+
+### Compare LR variants with SR variants
+# bedtools intersect -v -header -a data/plotcritic/cohort.anno.filtered.curated.del.vcf -b data/sniffles/merged_genotyped_filtered.del.vcf > data/sniffles/unique.sr.del.vcf
+# bedtools intersect -v -header -a data/sniffles/merged_genotyped_filtered.del.vcf -b data/plotcritic/cohort.anno.filtered.curated.del.vcf > data/sniffles/unique.lr.del.vcf
+
+# List of SV length
+# bcftools view -H data/sniffles/merged_genotyped_filtered.dup.vcf | grep -E -o 'SVLEN=[0-9-]+' | cut -c 7- | sort -n | head
+
+
+##### LONG READ ANALYSIS #####
+# long-read wolves: D-85-01, D-85-02 & 94-D-92-01
+
+### Filter to keep only autosomes
+#lr: vcftools --vcf data/sniffles/merged_genotyped_1kbpdist_typesave.vcf --out data/sniffles/merged_genotyped_filtered --recode --recode-INFO-all --chr 1 --chr 10 --chr 11 --chr 12 --chr 13 --chr 14 --chr 15 --chr 16 --chr 17 --chr 18 --chr 19 --chr 2 --chr 20 --chr 21 --chr 22 --chr 23 --chr 24 --chr 25 --chr 26 --chr 27 --chr 28 --chr 29 --chr 3 --chr 30 --chr 31 --chr 32 --chr 33 --chr 34 --chr 35 --chr 36 --chr 37 --chr 38 --chr 4 --chr 5 --chr 6 --chr 7 --chr 8 --chr 9
+### keep only non-wildype
+# bcftools view -i 'GT="0/1" || GT="1/1"' -f '%CHROM\t%POS\t%INFO/END[\t%GT]\n' data/sniffles/merged_genotyped_filtered.recode.vcf > data/sniffles/merged_genotyped_filtered.GT.vcf
+### split by variant
+# bcftools view -i 'SVTYPE="INV" & (GT="0/1" || GT="1/1")' -f '%CHROM\t%POS\t%INFO/END[\t%GT]\n' data/sniffles/merged_genotyped_filtered.GT.vcf > data/sniffles/merged_genotyped_filtered.inv.vcf
+
+### long-read SV summary
+# SURVIVOR stats data/sniffles/merged_genotyped_filtered.GT.vcf -1 -1 -1 data/sniffles/stats.all
+### count variants per individual
+# bcftools query -i'GT="alt"' -f'[%SAMPLE %GT \n]' data/sniffles/merged_genotyped_filtered.GT.vcf | awk '{print $1}' | sort | uniq -c > data/sniffles/sample.counts.lr
+# 62883 D-85-01     60431 D-85-02   67689 D-92-01
+
+### per variant:
+# del lr: 39304 D-85-01     38264 D-85-02   41242 D-92-01
+# del sr: 21819 D-85-01     21688 D-85-02   21685 D-92-01
+# dup lr: 6 D-85-01       4 D-85-02       7 D-92-01
+# dup sr: 409 D-85-01   414 D-85-02     417 D-92-01
+# inv lr: 91 D-85-01    91 D-85-02      100 D-92-01
+# inv sr: 94 D-85-01    97 D-85-02       95 D-92-01
+
+## parent check (85-1, 85-2)
+# incorrect:
+# 1/1-0/0   1464
+# 0/0-1/1   737
+# subtot    2201 (3.02%)
+# plausible:
+# 0/0-0/0   5253
+# 0/0-0/1   4218
+# 0/1-0/0   5756
+# 0/1-0/1   11615
+# 0/1-1/1   7513
+# 1/1-0/1   10752
+# 1/1-1/1   25589
+# subtot    70696
+# tot       72897

@@ -1,7 +1,6 @@
 ### hide tmp / personal stuff
 /out/**
 /.snakemake
-/notes
 /data/problematic/**
 /cache/**
 
